@@ -2,7 +2,7 @@
 @push('styles')
     <style>
         .single-popular-course img {
-            height: 194px;
+            height: 300px;
         }
         .course-content {
             height: 224px;
