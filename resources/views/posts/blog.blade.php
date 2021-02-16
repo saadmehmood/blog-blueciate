@@ -2,10 +2,10 @@
 @push('styles')
     <style>
         .single-popular-course img {
-            height: 300px;
+            height: 194px;
         }
         .course-content {
-            height: 224px;
+            height: 300px;
         }
         .section-padding-30 {
             padding-top: 30px;
