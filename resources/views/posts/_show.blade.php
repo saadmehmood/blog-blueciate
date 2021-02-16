@@ -43,7 +43,7 @@ $loopIndex = $loop->index;
         @if ($post->hasThumbnail())
             {{ Html::image($post->thumbnail->getUrl('thumb'), $post->thumbnail->name, ['class' => 'card-img-top']) }}
         @else
-            <img src="/img/bg-img/c1.jpg" alt="">
+            <img src="/img/blog-img/1.jpg" alt="">
         @endif
         <!-- Course Content -->
         <div class="course-content">
