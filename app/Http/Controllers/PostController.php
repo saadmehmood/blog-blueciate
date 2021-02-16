@@ -13,9 +13,9 @@ class PostController extends Controller
      */
     public function index(Request $request): View
     {
-        return view('posts.index', [
+        return view('posts.blog', [
             'posts' => Post::search($request->input('q'))
-                             ->with('author', 'likes')
+                             ->with('author', 'likes', 'tags')
                              ->withCount('comments', 'thumbnail', 'likes')
                              ->latest()
                              ->paginate(20)

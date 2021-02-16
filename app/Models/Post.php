@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Str;
 
@@ -143,5 +144,13 @@ class Post extends Model
     public function hasThumbnail(): bool
     {
         return filled($this->thumbnail_id);
+    }
+
+    /**
+     * Return the post's roles
+     */
+    public function tags(): belongsToMany
+    {
+        return $this->belongsToMany(Tag::class)->withTimestamps();
     }
 }

@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\PostsRequest;
 use App\Models\MediaLibrary;
 use App\Models\Post;
+use App\Models\Tag;
 use App\Models\User;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -31,7 +32,8 @@ class PostController extends Controller
         return view('admin.posts.edit', [
             'post' => $post,
             'users' => User::authors()->pluck('name', 'id'),
-            'media' => MediaLibrary::first()->media()->get()->pluck('name', 'id')
+            'media' => MediaLibrary::first()->media()->get()->pluck('name', 'id'),
+            'tags' => Tag::get()->pluck('name', 'id')
         ]);
     }
 
@@ -42,7 +44,8 @@ class PostController extends Controller
     {
         return view('admin.posts.create', [
             'users' => User::authors()->pluck('name', 'id'),
-            'media' => MediaLibrary::first()->media()->get()->pluck('name', 'id')
+            'media' => MediaLibrary::first()->media()->get()->pluck('name', 'id'),
+            'tags' => Tag::get()->pluck('name', 'id')
         ]);
     }
 
@@ -52,6 +55,8 @@ class PostController extends Controller
     public function store(PostsRequest $request): RedirectResponse
     {
         $post = Post::create($request->only(['title', 'content', 'posted_at', 'author_id', 'thumbnail_id']));
+        $tagIds = array_values($request->get('tags', []));
+        $post->tags()->sync($tagIds);
 
         return redirect()->route('admin.posts.edit', $post)->withSuccess(__('posts.created'));
     }
@@ -62,6 +67,8 @@ class PostController extends Controller
     public function update(PostsRequest $request, Post $post): RedirectResponse
     {
         $post->update($request->only(['title', 'content', 'posted_at', 'author_id', 'thumbnail_id']));
+        $tagIds = array_values($request->get('tags', []));
+        $post->tags()->sync($tagIds);
 
         return redirect()->route('admin.posts.edit', $post)->withSuccess(__('posts.updated'));
     }

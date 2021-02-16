@@ -40,6 +40,15 @@
     @enderror
 </div>
 
+<div class="form-group">
+    {!! Form::label('tags', __('posts.attributes.tags')) !!}
+    {!! Form::select('tags[]', $tags, null, ['multiple'=>'multiple', 'class' => 'form-control' . ($errors->has('tags') ? ' is-invalid' : '')]) !!}
+
+    @error('tags')
+    <span class="invalid-feedback">{{ $message }}</span>
+    @enderror
+</div>
+
 
 <div class="form-group">
     {!! Form::label('content', __('posts.attributes.content')) !!}
