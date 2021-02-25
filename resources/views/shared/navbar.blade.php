@@ -35,9 +35,9 @@
 
                             <a href="{{ url('/logout') }}"
                                 class="dropdown-item"
-                                onclick="event.preventDefault();
-                                            document.getElementById('logout-form').submit();">
-                                @lang('auth.logout')
+                                    onclick="event.preventDefault();
+                                                document.getElementById('logout-form').submit();">
+                                    @lang('auth.logout')
                             </a>
 
                             <form id="logout-form" class="d-none" action="{{ url('/logout') }}" method="POST">

@@ -48,23 +48,12 @@
                     <!-- Nav Start -->
                     <div class="classynav">
                         <ul>
-                            <li><a href="{{ route('home') }}">Home</a></li>
-                            <li><a href="#">Pages</a>
-                                <ul class="dropdown">
-                                    <li><a href="{{ route('home') }}">Home</a></li>
-                                    <li><a href="{{ route('courses') }}">Courses</a></li>
-                                    <li><a href="#">Single Courses</a></li>
-                                    <li><a href="#">Instructors</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Single Blog</a></li>
-                                    <li><a href="#">Regular Page</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
+                            <li><a href="https://blueciate.com/">Home</a></li>
+                            <li><a href="https://blueciate.com/cloud">Cloud</a>
                             </li>
-                            <li><a href="{{ route('courses') }}">Courses</a></li>
-                            <li><a href="#">Instructors</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="https://blueciate.com/products">Products</a></li>
+                            <li><a href="https://blueciate.com/consulting">Consulting</a></li>
+                            <li><a href="{{ route('home') }}">Blog</a></li>
                         </ul>
 
                         <!-- Search Button -->
@@ -75,11 +64,35 @@
 {{--                            </form>--}}
 {{--                        </div>--}}
 
-{{--                        <!-- Register / Login -->--}}
-{{--                        <div class="register-login-area">--}}
-{{--                            <a href="#" class="btn">Register</a>--}}
-{{--                            <a href="index-login.html" class="btn active">Login</a>--}}
-{{--                        </div>--}}
+                        <!-- Register / Login -->
+
+                        @guest
+                        <div class="register-login-area">
+                            <a href="{{ route('register') }}" class="btn">Register</a>
+                            <a href="{{ route('login') }}" class="btn active">Login</a>
+                        </div>
+                        @else
+                        <div class="login-state d-flex align-items-center">
+                            <div class="user-name mr-30">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button" id="userName" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }}</a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userName">
+                                        {{ link_to_route('users.show', __('users.public_profile'), Auth::user(), ['class' => 'dropdown-item']) }}
+                                        {{ link_to_route('users.edit', __('users.settings'), [], ['class' => 'dropdown-item']) }}
+                                        <a class="dropdown-item" href="{{ url('/logout') }}" onclick="event.preventDefault();
+                                            document.getElementById('logout-form').submit();">
+                                            @lang('auth.logout')</a>
+                                        <form id="logout-form" class="d-none" action="{{ url('/logout') }}" method="POST">
+                                            {{ csrf_field() }}
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="userthumb">
+                                <img src="img/bg-img/t1.png" alt="">
+                            </div>
+                        </div>
+                        @endguest
 
                     </div>
                     <!-- Nav End -->
