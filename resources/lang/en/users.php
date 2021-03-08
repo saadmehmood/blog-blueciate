@@ -20,7 +20,7 @@ return [
     'password' => 'Password',
     'password_confirmation' => 'Password confirmation',
     'roles' => 'Roles',
-    'registered_at' => 'Registered at',
+    'registered_at' => 'Date of Registration',
     'api_token' => "API key",
     'designation' => "Designation"
   ],
