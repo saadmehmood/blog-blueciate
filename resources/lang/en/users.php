@@ -14,7 +14,7 @@ return [
   'security' => "Security",
 
   'attributes' => [
-    'name' => 'Name',
+    'name' => 'Full Name',
     'email' => 'Email',
     'current_password' => 'Current password',
     'password' => 'Password',
@@ -26,7 +26,7 @@ return [
   ],
 
   'placeholder' => [
-    'name' => 'Your name',
+    'name' => 'Your Full Name',
     'email' => 'Your email',
     'current_password' => 'Your current password',
     'password' => 'Your new password',
