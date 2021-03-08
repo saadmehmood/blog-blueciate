@@ -57,7 +57,7 @@
     <section class="blog-area blog-page section-padding-30">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12" style="display: none">
                     <div class="blog-catagories mb-30 d-flex flex-wrap justify-content-between">
 
                         <!-- Single Catagories -->

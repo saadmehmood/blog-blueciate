@@ -21,6 +21,17 @@
   </div>
 
   <div class="form-row">
+      <div class="form-group col-md-6">
+          {!! Form::label('designation', __('users.attributes.designation')) !!}
+          {!! Form::text('designation', null, ['class' => 'form-control' . ($errors->has('name') ? ' is-invalid' : ''), 'placeholder' => __('users.placeholder.designation')]) !!}
+
+          @error('name')
+          <span class="invalid-feedback">{{ $message }}</span>
+          @enderror
+      </div>
+  </div>
+
+  <div class="form-row">
     <div class="form-group col-md-6">
       {!! Form::label('password', __('users.attributes.password')) !!}
       {!! Form::password('password', ['class' => 'form-control' . ($errors->has('password') ? ' is-invalid' : ''), 'placeholder' => __('users.placeholder.password')]) !!}

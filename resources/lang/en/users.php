@@ -21,7 +21,8 @@ return [
     'password_confirmation' => 'Password confirmation',
     'roles' => 'Roles',
     'registered_at' => 'Registered at',
-    'api_token' => "API key"
+    'api_token' => "API key",
+    'designation' => "Designation"
   ],
 
   'placeholder' => [
@@ -29,6 +30,7 @@ return [
     'email' => 'Your email',
     'current_password' => 'Your current password',
     'password' => 'Your new password',
-    'password_confirmation' => 'Password confirmation'
+    'password_confirmation' => 'Password confirmation',
+    'designation' => "Designation"
   ]
 ];

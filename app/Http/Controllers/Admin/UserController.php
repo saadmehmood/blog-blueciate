@@ -44,7 +44,7 @@ class UserController extends Controller
             ]);
         }
 
-        $user->update(array_filter($request->only(['name', 'email', 'password'])));
+        $user->update(array_filter($request->only(['designation', 'name', 'email', 'password'])));
 
         $role_ids = array_values($request->get('roles', []));
         $user->roles()->sync($role_ids);
