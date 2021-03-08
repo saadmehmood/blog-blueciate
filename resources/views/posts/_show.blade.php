@@ -51,6 +51,8 @@ $loopIndex = $loop->index;
             <div class="meta d-flex align-items-center">
                 <a href="#">{{ link_to_route('users.show', $post->author->fullname, $post->author) }}</a>
                 <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                <a href="#">{{ $post->author->designation }}</a>
+                <span><i class="fa fa-circle" aria-hidden="true"></i></span>
                 <a href="#">{{ humanize_date($post->posted_at) }}</a>
             </div>
             <div class="d-flex align-items-center">
