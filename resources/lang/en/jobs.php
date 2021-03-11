@@ -24,7 +24,8 @@ return [
     'author' => 'Author',
     'posted_at' => 'Posted at',
     'thumbnail' => "Thumbnail image",
-    'tags' => "Select tags",
+    'posted_by' => "Posted By",
+    'location' => "Location",
   ],
 
   'placeholder' => [

@@ -9,4 +9,6 @@ return [
     'users' => 'Users',
     'media' => 'Gallery',
     'tags' => 'Tags',
+    'jobs' => 'Jobs',
+    'careers' => 'Jobs',
 ];

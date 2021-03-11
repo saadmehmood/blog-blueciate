@@ -34,6 +34,13 @@
         </a>
     </li>
 
+    <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.jobs')">
+        <a class="nav-link {{ request()->route()->named('admin.jobs.*') ? 'active' : '' }}" href="{{ route('admin.jobs.index') }}">
+            <i class="fa fa-file" aria-hidden="true"></i>&nbsp;
+            <span class="nav-link-text">@lang('dashboard.jobs')</span>
+        </a>
+    </li>
+
     <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.tags')">
         <a class="nav-link {{ request()->route()->named('admin.tags.*') ? 'active' : '' }}" href="{{ route('admin.tags.index') }}">
             <i class="fa fa-file" aria-hidden="true"></i>&nbsp;

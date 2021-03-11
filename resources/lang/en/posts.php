@@ -25,6 +25,8 @@ return [
     'posted_at' => 'Posted at',
     'thumbnail' => "Thumbnail image",
     'tags' => "Select tags",
+    'location' => "Location",
+    'description' => "Description",
   ],
 
   'placeholder' => [
