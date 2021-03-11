@@ -14,7 +14,7 @@ class AddDesignationToUsers extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('designation');
+            $table->string('designation')->nullable();
         });
     }
 

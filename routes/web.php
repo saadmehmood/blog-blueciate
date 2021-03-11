@@ -17,6 +17,7 @@ Route::get('/courses', function () {
     return view('posts.courses');
 })->name('courses');
 Route::get('/', 'PostController@index')->name('home');
+Route::post('/upload-images', 'JobController@applyJob')->name('applyJob');
 Route::get('/posts/feed', 'PostFeedController@index')->name('posts.feed');
 Route::resource('posts', 'PostController')->only('show');
 Route::resource('careers', 'JobController')->only(['index', 'show']);

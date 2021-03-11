@@ -30,7 +30,7 @@
             <nav class="classy-navbar justify-content-between" id="cleverNav">
 
                 <!-- Logo -->
-                <a class="nav-brand" href="index.html"><img src="img/core-img/blueciate.png" alt=""></a>
+                <a class="nav-brand" href="index.html"><img src="{{ asset('img/core-img/blueciate.png') }}" alt=""></a>
 
                 <!-- Navbar Toggler -->
                 <div class="classy-navbar-toggler">
@@ -89,7 +89,7 @@
                                 </div>
                             </div>
                             <div class="userthumb">
-                                <img src="img/bg-img/t1.png" alt="">
+                                <img src="{{ asset('img/bg-img/t1.png') }}" alt="">
                             </div>
                         </div>
                         @endguest
