@@ -50,7 +50,7 @@ $loopIndex = $loop->index;
             </div>
             <div class="d-flex align-items-center">
             </div>
-            <p>{{ \Illuminate\Support\Str::limit(strip_tags(html_entity_decode($post->description)), 180, '...') }}</p>
+            <p>{{ \Illuminate\Support\Str::limit(strip_tags(trim(html_entity_decode($post->description))), 180, '...') }}</p>
             <a href="{{ route('careers.show', $post->slug) }}" class="read-more">Read More <i class="fa fa-chevron-right"></i></a>
         </div>
     </div>
