@@ -5,6 +5,7 @@ namespace App\Http\Requests\Admin;
 use App\Rules\CanBeAuthor;
 use Carbon\Carbon;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 
 class CareerJobsRequest extends FormRequest
@@ -29,7 +30,8 @@ class CareerJobsRequest extends FormRequest
         ]);
 
         $this->merge([
-            'posted_at' => Carbon::parse($this->input('posted_at'))
+            'posted_at' => Carbon::now(),
+            'posted_by' => Auth::id()
         ]);
     }
 
