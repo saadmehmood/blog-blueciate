@@ -38,11 +38,11 @@ $loopIndex = $loop->index;
     $delay = '750ms';
     }
 @endphp
-<div class="col-12 col-md-12 col-lg-6">
+<div class="col-12 col-md-12 col-lg-8">
     <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="{{ $delay }}">
         <!-- Course Content -->
         <div class="blog-content">
-            <h4 style="font-size: 2rem">{{ $post->title }} </h4>
+            <h4 style="font-size: 2rem; color: #1785b0;">{{ $post->title }} </h4>
             <div class="meta d-flex align-items-center">
                 Publish Date:
                 <strong>{{ humanize_date($post->posted_at) }}</strong>
@@ -50,7 +50,7 @@ $loopIndex = $loop->index;
             </div>
             <div class="d-flex align-items-center">
             </div>
-            <p>{{ \Illuminate\Support\Str::limit(strip_tags(trim(html_entity_decode($post->description))), 180, '...') }}</p>
+            <p>{{ \Illuminate\Support\Str::limit(strip_tags(trim(html_entity_decode($post->description))), 300, '...') }}</p>
             <a href="{{ route('careers.show', $post->slug) }}" class="read-more">Read More <i class="fa fa-chevron-right"></i></a>
         </div>
     </div>

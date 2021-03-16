@@ -20,9 +20,10 @@ class JobController extends Controller
         return view('jobs.index', [
             'title' => 'Jobs at Blueciate',
             'posts' => CareerJob::search($request->input('q'))
-                             ->with('postedBy')
-                             ->latest()
-                             ->paginate(20)
+                ->where('status', 1)
+                ->with('postedBy')
+                ->latest()
+                ->paginate(20)
         ]);
     }
 

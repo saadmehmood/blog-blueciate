@@ -22,7 +22,7 @@ class CareerJobController extends Controller
     public function index(): View
     {
         return view('admin.career_jobs.index', [
-            'posts' => CareerJob::where('status', 1)->latest()->paginate(50)
+            'posts' => CareerJob::latest()->paginate(50)
         ]);
     }
 
@@ -57,7 +57,7 @@ class CareerJobController extends Controller
      */
     public function store(CareerJobsRequest $request): RedirectResponse
     {
-        $post = CareerJob::create($request->only(['title', 'description', 'posted_at', 'posted_by', 'location', 'slug']));
+        $post = CareerJob::create($request->only(['title', 'description', 'posted_at', 'posted_by', 'location', 'slug', 'status']));
 
         return redirect()->route('admin.jobs.index', $post)->withSuccess(__('posts.created'));
     }
@@ -68,7 +68,7 @@ class CareerJobController extends Controller
     public function update(CareerJobsRequest $request, $jobSlug): RedirectResponse
     {
         $careerJob = CareerJob::where('slug', $jobSlug)->first();
-        $careerJob->update($request->only(['title', 'description', 'posted_at', 'posted_by', 'location', 'slug']));
+        $careerJob->update($request->only(['title', 'description', 'posted_at', 'posted_by', 'location', 'slug', 'status']));
 
         return redirect()->route('admin.jobs.index', $careerJob)->withSuccess(__('jobs.updated'));
     }

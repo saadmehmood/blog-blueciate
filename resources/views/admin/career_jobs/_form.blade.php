@@ -23,19 +23,10 @@
 
 <div class="form-row">
     <div class="form-group col-md-6">
-        {!! Form::label('posted_by', __('jobs.attributes.posted_by')) !!}
-        {!! Form::select('posted_by', $users, null, ['class' => 'form-control' . ($errors->has('author_id') ? ' is-invalid' : ''), 'required']) !!}
+        {!! Form::label('status', __('jobs.attributes.posted_by')) !!}
+        {!! Form::select('status', [1 => 'Active', 0=>'Inactive'], null, ['class' => 'form-control' . ($errors->has('author_id') ? ' is-invalid' : ''), 'required']) !!}
 
         @error('author_id')
-            <span class="invalid-feedback">{{ $message }}</span>
-        @enderror
-    </div>
-
-    <div class="form-group col-md-6">
-        {!! Form::label('posted_at', __('jobs.attributes.posted_at')) !!}
-        <input type="datetime-local" name="posted_at" class="form-control {{ ($errors->has('posted_at') ? ' is-invalid' : '') }}" value="{{ $posted_at }}">
-
-        @error('posted_at')
             <span class="invalid-feedback">{{ $message }}</span>
         @enderror
     </div>
