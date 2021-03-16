@@ -51,6 +51,8 @@ class RouteServiceProvider extends ServiceProvider
         $this->mapWebRoutes();
 
         $this->mapAdminRoutes();
+
+        $this->mapBlueciateRoutes();
     }
 
     /**
@@ -102,6 +104,18 @@ class RouteServiceProvider extends ServiceProvider
         Route::middleware('web')
              ->namespace($this->namespace)
              ->group(base_path('routes/auth.php'));
+    }
+
+    /**
+     * Define the "auth" routes for the application.
+     *
+     * These routes are typically stateless.
+     */
+    protected function mapBlueciateRoutes(): void
+    {
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/blueciate.php'));
     }
 
     /**

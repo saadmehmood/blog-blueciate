@@ -59,7 +59,7 @@ class CareerJobController extends Controller
     {
         $post = CareerJob::create($request->only(['title', 'description', 'posted_at', 'posted_by', 'location', 'slug']));
 
-        return redirect()->route('admin.jobs.edit', $post)->withSuccess(__('posts.created'));
+        return redirect()->route('admin.jobs.index', $post)->withSuccess(__('posts.created'));
     }
 
     /**
@@ -70,7 +70,7 @@ class CareerJobController extends Controller
         $careerJob = CareerJob::where('slug', $jobSlug)->first();
         $careerJob->update($request->only(['title', 'description', 'posted_at', 'posted_by', 'location', 'slug']));
 
-        return redirect()->route('admin.jobs.edit', $careerJob)->withSuccess(__('jobs.updated'));
+        return redirect()->route('admin.jobs.index', $careerJob)->withSuccess(__('jobs.updated'));
     }
 
     /**

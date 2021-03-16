@@ -48,12 +48,12 @@
                     <!-- Nav Start -->
                     <div class="classynav">
                         <ul>
-                            <li><a href="https://blueciate.com/">Home</a></li>
-                            <li><a href="https://blueciate.com/cloud">Cloud</a>
+                            <li><a href="{{ route('home') }}">Home</a></li>
+                            <li><a href="{{ route('cloud') }}">Cloud</a>
                             </li>
-                            <li><a href="https://blueciate.com/products">Products</a></li>
-                            <li><a href="https://blueciate.com/consulting">Consulting</a></li>
-                            <li><a href="{{ route('home') }}">Blog</a></li>
+                            <li><a href="{{ route('products') }}">Products</a></li>
+                            <li><a href="{{ route('consulting') }}">Consulting</a></li>
+                            <li><a href="{{ route('posts.index') }}">Blog</a></li>
                         </ul>
 
                         <!-- Search Button -->

@@ -5,11 +5,9 @@ namespace App\Http\Controllers;
 use App\Http\Requests\JobApplicationsRequest;
 use App\Models\CareerJob;
 use App\Models\JobApplication;
-use App\Models\Post;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Mail;
-use Illuminate\Support\Facades\Storage;
 use Illuminate\View\View;
 
 class JobController extends Controller
@@ -20,6 +18,7 @@ class JobController extends Controller
     public function index(Request $request): View
     {
         return view('jobs.index', [
+            'title' => 'Jobs at Blueciate',
             'posts' => CareerJob::search($request->input('q'))
                              ->with('postedBy')
                              ->latest()
@@ -35,6 +34,7 @@ class JobController extends Controller
         $careerJob = CareerJob::where('slug', $slug)->where('status', 1)->first();
 
         return view('jobs.show', [
+            'title' => $careerJob->title,
             'post' => $careerJob
         ]);
     }

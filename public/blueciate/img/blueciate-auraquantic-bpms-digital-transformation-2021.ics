@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+PRODID:-//AddEvent Inc//AddEvent.com v1.7//EN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:STANDARD
+DTSTART:20211107T010000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=11
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20210314T030000
+RRULE:FREQ=YEARLY;BYDAY=2SU;BYMONTH=3
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20210225T172102Z
+STATUS:CONFIRMED
+UID:1614273662addeventcom
+SEQUENCE:0
+DTSTART;TZID=America/Chicago:20210225T100000
+DTEND;TZID=America/Chicago:20210225T110000
+SUMMARY:Blueciate \AuraQuantic BPMS Digital Transformation 2021
+DESCRIPTION:BPMS Digital Transformation 2021:\n\nDate Time: Feb 25\, 2021 10:00 AM Central Time (US and Canada)\n\nThank you for registering for " [WEBINAR] BlueCiate in Collaboration with AuraQuantic BPMS for Digital Transformation 2021” to provide the software for all your energy IT\n\nJoin Zoom Meeting\n\nhttps://zoom.us/j/97425448874?pwd=bFBpNTdoK3Q1Z2RWWWsvT3ZMZHcrQT09\n\nMeeting ID: 974 2544 8874\n\nPasscode: 150584\n\nOne tap mobile\n\n+13462487799\,\,97425448874#\,\,\,\,*150584# US (Houston)\n\n+12532158782\,\,97425448874#\,\,\,\,*150584# US (Tacoma)\n\nThanks again\, and we look forward to seeing you there!\n\nBest Regards\,\n\nBlueciate Team
+X-ALT-DESC;FMTTYPE=text/html:BPMS Digital Transformation 2021:<br />Date Time: Feb 25, 2021 10:00 AM Central Time (US and Canada)<br />Thank you for registering for " [WEBINAR] BlueCiate in Collaboration with AuraQuantic BPMS for Digital Transformation 2021” to provide the software for all your energy IT<br />Join Zoom Meeting<br />https://zoom.us/j/97425448874?pwd=bFBpNTdoK3Q1Z2RWWWsvT3ZMZHcrQT09<br />Meeting ID: 974 2544 8874<br />Passcode: 150584<br />One tap mobile<br />+13462487799,,97425448874#,,,,*150584# US (Houston)<br />+12532158782,,97425448874#,,,,*150584# US (Tacoma)<br />Thanks again, and we look forward to seeing you there!<br />Best Regards,<br />Blueciate Team
+LOCATION:Webex
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

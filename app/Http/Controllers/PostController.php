@@ -10,10 +10,13 @@ class PostController extends Controller
 {
     /**
      * Show the application dashboard.
+     * @param Request $request
+     * @return View
      */
     public function index(Request $request): View
     {
         return view('posts.blog', [
+            'title' => 'Blog',
             'posts' => Post::search($request->input('q'))
                              ->with('author', 'likes', 'tags')
                              ->withCount('comments', 'thumbnail', 'likes')
@@ -24,6 +27,9 @@ class PostController extends Controller
 
     /**
      * Display the specified resource.
+     * @param Request $request
+     * @param Post $post
+     * @return View
      */
     public function show(Request $request, Post $post): View
     {
@@ -31,6 +37,7 @@ class PostController extends Controller
         $post->likes_count = $post->likes()->count();
 
         return view('posts.show', [
+            'title' => $post->title,
             'post' => $post
         ]);
     }
