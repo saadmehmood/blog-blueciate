@@ -16,7 +16,7 @@ Route::get('/', 'BlueciateController@index')->name('home');
 Route::get('/cloud', 'BlueciateController@cloud')->name('cloud');
 Route::get('/products', 'BlueciateController@products')->name('products');
 Route::get('/consulting', 'BlueciateController@consulting')->name('consulting');
-Route::get('/app-store', 'BlueciateController@login')->name('login');
+Route::get('/app-store', 'BlueciateController@login')->name('app-store');
 Route::get('/application-integration', 'BlueciateController@applicationIntegration')->name('application-integration');
 Route::get('/internet-of-things', 'BlueciateController@internetOfThings')->name('internet-of-things');
 Route::get('/Services/Website-development', 'BlueciateController@websiteDevelopment')->name('website-development');
