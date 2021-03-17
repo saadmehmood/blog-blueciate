@@ -16,7 +16,7 @@ Route::get('/', 'BlueciateController@index')->name('home');
 Route::get('/cloud', 'BlueciateController@cloud')->name('cloud');
 Route::get('/products', 'BlueciateController@products')->name('products');
 Route::get('/consulting', 'BlueciateController@consulting')->name('consulting');
-//Route::get('/login', 'BlueciateController@login')->name('login');
+Route::get('/app-store', 'BlueciateController@login')->name('login');
 Route::get('/application-integration', 'BlueciateController@applicationIntegration')->name('application-integration');
 Route::get('/internet-of-things', 'BlueciateController@internetOfThings')->name('internet-of-things');
 Route::get('/Services/Website-development', 'BlueciateController@websiteDevelopment')->name('website-development');
@@ -40,3 +40,4 @@ Route::get('/bpms-webinar', 'BlueciateController@bpmsWebinar')->name('bpmsWebina
 Route::post('/bpms-webinar', 'BlueciateController@bpmsWebinarMail')->name('bpmsWebinarMail');
 Route::get('/bpms-ready', 'BlueciateController@bpmsReady')->name('bpmsReady');
 Route::post('/bpms-ready', 'BlueciateController@bpmsReadyMail')->name('bpmsReadyMail');
+Route::get('/univergeblue', 'BlueciateController@univergeBlue')->name('univerge-blue');
