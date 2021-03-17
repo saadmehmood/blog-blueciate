@@ -49,13 +49,60 @@
         .read-more:hover {
             color: #33b44a;
         }
+        .clever-catagory {
+            height: 400px;
+        }
+        .clever-catagory h3 {
+            color: #1785b0;
+        }
+        .clever-catagory::after {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            content: '';
+            background-color: rgba(215, 224, 252, 0.3);
+            z-index: -1;
+        }
+        .tl {
+            display: flex;
+            margin-bottom: 2rem;
+        }
+        .tl--upper .tl__title {
+            text-transform: uppercase;
+        }
+        .tl__title {
+            display: inline-block;
+            flex: 0 0 auto;
+            color: #002236!important;
+            line-height: 1.17;
+            padding-right: 1.11111rem;
+            position: relative;
+        }
+        .tl__title span {
+            color: #1785b0;
+        }
     </style>
 @endpush
 @section('content')
 
+    <!-- ##### Catagory ##### -->
+    <div class="clever-catagory bg-img d-flex align-items-center justify-content-center p-3" style="background-image: url(/img/bg-img/careers-bg.jpg);">
+        <h3>
+            Explore Careers at Blueciate
+        </h3>
+    </div>
     <!-- ##### Blog Area Start ##### -->
     <section class="blog-area blog-page section-padding-30">
         <div class="container-fluid">
+            <div class="row">
+                <div class="tl tl--upper">
+                    <h2 class="tl__title">
+                        <span>OPEN</span> VACANCIES
+                    </h2>
+                </div>
+            </div>
             <div class="row">
                 @foreach($posts as $post)
                     @include('jobs/_show', ['post' => $post])

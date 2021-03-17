@@ -260,17 +260,24 @@
         width: 80%;
     }
 
-
-
-
-
+    .img-holder::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding-top: 30%;
+        background: url(/blueciate/img/univerge-blue-connect-application.png) no-repeat 0 0;
+        background-size: 100% auto;
+    }
 
 </style>
 @endpush
 @extends('layouts.blueciate-2')
 @section('content')
         <?php
-        $images = ['bpm-7.png'];
+        $images = ['world-map.png'];
         ?>
         @include('blueciate.image-slider')
 
@@ -437,6 +444,9 @@
                             <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span><strong>Centralized control and protection of company data</strong> which offers total control of all corporate backup data ranging from bare metal virtualized servers, to applications, databases files, and endpoints</li>
                             <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span><strong>Service and Support</strong> with a fully staffed Network Operations Center (NOC) to manage and support entire backup process as well as restoration assistance delivered 7x24x365</li>
                         </ul>
+                        <div class="fa-1x mx-auto mt-4" style="text-align: center;">
+                            <a href="https://www.univergeblue.com/cloud-services/share" class="buttonmore">Learn More</a>
+                        </div>
 
                     </div>
                 </div>
@@ -455,262 +465,6 @@
                 </div>
             </div>
         </section>
-
-<br>
-        <!--BLOCK SECTION-->
-        <section class="six_box_sec services-blocks-sm" id="six_box_sec">
-            <div class="">
-                <div class="row no-gutters">
-                    <div class="col-12 col-lg-4 col-sm-6 pr-1 pl-1 services-block-four">
-                        <div class="inner-box wow fadeInLeft animated" data-wow-delay="0ms" data-wow-duration="1500ms"
-                             style="visibility: visible;animation-duration: 1500ms;animation-delay: 0ms;/* animation-name: fadeInLeft; */">
-                            <div class="image">
-                                <img src="/blueciate/img/1.apps-2558373__480.webp" alt="">
-                                <div class="overlay-box overlay-box-green">
-                                    <div class="content">
-                                        <div class="icon-box">
-                                            <span class="icon flaticon-statistics-1"></span>
-                                        </div>
-                                        <h4 style="color: white;">AuraQuantic Business Process Automation</h4>
-                                    </div>
-                                </div>
-
-                                <div class="overlay-box-green-two overlay-box-two">
-                                    <div class="overlay-inner-two">
-                                        <div class="content">
-                                            <div class="icon-box">
-                                                <span class="icon flaticon-statistics-1"></span>
-                                            </div>
-                                            <h5 class="mb-1">AuraQuantic is a Zero-Code iBPMS (Intelligent Business Process Management Suite) platform</h5>
-                                            <span style="font-size: 10px;"> that allows you to visually-create and digitize every step of all kind of business processes in one easy-to-use Digital Platform. BPM is the consolidated and unstoppable trend that is changing forever the way to manage operations in organizations, making them much more flexible, highly automated and extremely powerful. | Weaknesses are brought to light and the most relevant activities are strengthened. AuraQuantic increases productivity by 60%-85%.</span>
-                                            <br>
-                                            <a class="read-more" style="padding: 8px 15px; font-size: 8px" href="https://www.auraquantic.com/bpm-digital-platform/process-automation">Learn More<span
-                                                        class="fa fa-angle-double-right"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 col-sm-6 pr-1 pl-1 services-block-four">
-                        <div class="inner-box wow fadeInLeft animated" data-wow-delay="0ms" data-wow-duration="1500ms"
-                             style="visibility: visible;animation-duration: 1500ms;animation-delay: 0ms;/* animation-name: fadeInLeft; */">
-                            <div class="image">
-                                <img src="/blueciate/img/5.CLOUD.webp" alt="">
-                                <div class="overlay-box  overlay-box-green">
-                                    <div class="content">
-                                        <div class="icon-box">
-                                            <span class="icon flaticon-statistics-1"></span>
-                                        </div>
-                                        <h4 style="color: white;">AuraQuantic Finance</h4>
-                                    </div>
-                                </div>
-
-                                <div class="overlay-box-two overlay-box-green-two">
-                                    <div class="overlay-inner-two">
-                                        <div class="content">
-                                            <div class="icon-box">
-                                                <span class="icon flaticon-statistics-1"></span>
-                                            </div>
-                                            <h5 class="mb-1">AuraQuantic Finance is a Zero-Code iBPMS platform</h5>
-                                            <span style="font-size: 10px;">AuraQuantic Finance platform enables managers to check the status of each process and, based on the established indicators, make well-informed decisions to achieve optimal company development. AuraQuantic BPM Finance is a Zero-Code iBPMS (Intelligent Business Process Management Suite) Allows you to visually create and digitize every step of all kind of finance processes in one easy-to-use Digital Platform.</span>
-                                            <br>
-                                            <a class="read-more" style="padding: 8px 15px; font-size: 8px" href="https://www.auraquantic.com/bpm-digital-platform/process-automation">Learn More<span
-                                                        class="fa fa-angle-double-right"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 col-sm-6 pr-1 pl-1 services-block-four">
-                        <div class="inner-box wow fadeInLeft animated" data-wow-delay="0ms" data-wow-duration="1500ms"
-                             style="visibility: visible;animation-duration: 1500ms;animation-delay: 0ms;/* animation-name: fadeInLeft; */">
-                            <div class="image">
-                                <img src="/blueciate/img/4.business-3528035__480.webp" alt="">
-                                <div class="overlay-box overlay-box-green">
-                                    <div class="content">
-                                        <div class="icon-box">
-                                            <span class="icon flaticon-statistics-1"></span>
-                                        </div>
-                                        <h4 style="color: white;">AuraQuantic Insurance</h4>
-                                    </div>
-                                </div>
-
-                                <div class="overlay-box-two overlay-box-green-two">
-                                    <div class="overlay-inner-two">
-                                        <div class="content">
-                                            <div class="icon-box">
-                                                <span class="icon flaticon-statistics-1"></span>
-                                            </div>
-                                            <h5 class="mb-1">AuraQuantic Insurance enables managers to check the status of each process.</h5>
-                                            <span style="font-size: 10px;">AuraQuantic BPM Insurance enables Management to check the status of each process and, based on the established indicators, make well-informed decisions to achieve optimal company development. AuraQuantic BPM Insurance is a Zero-Code iBPMS (Intelligent Business Process Management Suite) Allows you to visually create and digitize every step of all kind of insurance processes in one easy-to-use Digital Platform.</span>
-                                            <br>
-                                            <a class="read-more" style="padding: 8px 15px; font-size: 8px" href="https://www.auraquantic.com/bpm-digital-platform/process-automation">Learn More<span
-                                                        class="fa fa-angle-double-right"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row no-gutters mt-2">
-                    <div class="col-12 col-lg-4 col-sm-6 pr-1 pl-1 services-block-four">
-                        <div class="inner-box wow fadeInLeft animated" data-wow-delay="0ms" data-wow-duration="1500ms"
-                             style="visibility: visible;animation-duration: 1500ms;animation-delay: 0ms;/* animation-name: fadeInLeft; */">
-                            <div class="image">
-                                <img src="/blueciate/img/3.bulletin-board-3233643__480.webp" alt="">
-                                <div class="overlay-box overlay-box-green">
-                                    <div class="content">
-                                        <div class="icon-box">
-                                            <span class="icon flaticon-statistics-1"></span>
-                                        </div>
-                                        <h4 style="color: white;">AuraQuantic Manufacturing</h4>
-                                    </div>
-                                </div>
-
-                                <div class="overlay-box-two overlay-box-green-two">
-                                    <div class="overlay-inner-two">
-                                        <div class="content">
-                                            <div class="icon-box">
-                                                <span class="icon flaticon-statistics-1"></span>
-                                            </div>
-                                            <h5 class="mb-1">AuraQuantic Manufacturing</h5>
-                                            <span style="font-size: 10px;">AuraQuantic Manufacturing platform is a Zero-Code iBPMS (Intelligent Business Process Management Suite) that allows you to visually create and digitize every step of all kind of processes in one easy-to-use Digital Platform compatible with existing systems (ERP, CRM, Legacy apps, etc.). AuraQuantic BPM Manufacturing can implement even the most complex processes without any additional programming.</span>
-                                            <br>
-                                            <a class="read-more" style="padding: 8px 15px; font-size: 8px" href="https://www.auraquantic.com/bpm-digital-platform/process-automation">Learn More<span
-                                                        class="fa fa-angle-double-right"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 col-sm-6 pr-1 pl-1 services-block-four">
-                        <div class="inner-box wow fadeInLeft animated" data-wow-delay="0ms" data-wow-duration="1500ms"
-                             style="visibility: visible;animation-duration: 1500ms;animation-delay: 0ms;/* animation-name: fadeInLeft; */">
-                            <div class="image">
-                                <img src="/blueciate/img/8.hand-3108158__480.webp" alt="">
-                                <div class="overlay-box overlay-box-green">
-                                    <div class="content">
-                                        <div class="icon-box">
-                                            <span class="icon flaticon-statistics-1"></span>
-                                        </div>
-                                        <h4 style="color: white;">AuraQuantic Energy - Oil and Gas</h4>
-                                    </div>
-                                </div>
-
-                                <div class="overlay-box-two overlay-box-green-two">
-                                    <div class="overlay-inner-two">
-                                        <div class="content">
-                                            <div class="icon-box">
-                                                <span class="icon flaticon-statistics-1"></span>
-                                            </div>
-                                            <h5 class="mb-1">AuraQuantic Oil and Gas (O&G)</h5>
-                                            <span style="font-size: 10px;">AuraQuantic Oil and Gas is a Zero-Code iBPMS (Intelligent Business Process Management Suite) platform that allows you to visually create and digitize every step of all kind of processes in one easy-to-use Digital Platform compatible with existing systems (ERP, CRM, Legacy apps, etc.). AuraQuantic BPM Oil and Gas can implement even the most complex processes without any additional programming. If you are on an accelerated expansion scenario you required the implementation of a system to automate Process for the complete Oil and Gas operational cycle including: CAPEX Project Control, Opex Approval flows.</span>
-                                            <br>
-                                            <a class="read-more" style="padding: 8px 15px; font-size: 8px" href="https://www.auraquantic.com/bpm-digital-platform/process-automation">Learn More<span
-                                                        class="fa fa-angle-double-right"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 col-sm-6 pr-1 pl-1 services-block-four">
-                        <div class="inner-box wow fadeInLeft animated" data-wow-delay="0ms" data-wow-duration="1500ms"
-                             style="visibility: visible;animation-duration: 1500ms;animation-delay: 0ms;/* animation-name: fadeInLeft; */">
-                            <div class="image">
-                                <img src="/blueciate/img/2.back-view-woman-making-video-260nw-1683359032.webp" alt="">
-                                <div class="overlay-box overlay-box-green">
-                                    <div class="content">
-                                        <div class="icon-box">
-                                            <span class="icon flaticon-statistics-1"></span>
-                                        </div>
-                                        <h4 style="color: white;">AuraQuantic Compliance</h4>
-                                    </div>
-                                </div>
-
-                                <div class="overlay-box-two overlay-box-green-two">
-                                    <div class="overlay-inner-two">
-                                        <div class="content">
-                                            <div class="icon-box">
-                                                <span class="icon flaticon-statistics-1"></span>
-                                            </div>
-                                            <h5 class="mb-1">AuraQuantic GDPR Governance</h5>
-                                            <span style="font-size: 10px;">“AuraQuantic GDPR Accelerator” / “AuraQuantic GDPR Governance Tool” ensures GDPR business procedures compliance. • Accountability • All Lawful Bases • Validate Lawful Bases • Renew Lawful Bases • Automatic Messaging • Processing and Purpose Assistant • Data Retention Periods • Security Measures • IT System Control • Compulsory Impact Assessment • Proof of No Assessment • List of Risks Included • Risk Mitigation Measures • Guaranteed Execution of Measures • Report Templates • Data Subject Rights • Incident mailbox • Incident Management Process • Security Breach Notification • Sanction Attenuation • Communication Log with Data Processors • Complete Management of the Data Processor.</span>
-                                            <br>
-                                            <a class="read-more" style="padding: 8px 15px; font-size: 8px" href="https://www.auraquantic.com/bpm-digital-platform/process-automation">Learn More<span
-                                                        class="fa fa-angle-double-right"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Modal -->
-        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <div>
-                            <iframe class="video-iframe" src="" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body p-0">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <iframe class="video-iframe" src="https://www.youtube.com/embed/PMeNAFSKkpQ?&showinfo=0&rel=0&modestbranding=1&cc_load_policy=1&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                                <div class="carousel-item">
-                                    <iframe class="video-iframe" src="https://www.youtube.com/embed/0qh7ZrJJjOg?&showinfo=0&rel=0&modestbranding=1&cc_load_policy=1&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                                <div class="carousel-item">
-                                    <iframe class="video-iframe" src="https://www.youtube.com/embed/ld6E_PJXg_k?&showinfo=0&rel=0&modestbranding=1&cc_load_policy=1&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="What is BPM / BPMS / iBPMS (Business Process Management)?"></iframe>
-                                </div>
-                                <div class="carousel-item">
-                                    <iframe class="video-iframe" class="embedded-video" title="Process Automation in 3 Steps" src="https://www.youtube.com/embed/TZLe74T0pcU?&showinfo=0&rel=0&modestbranding=1&cc_load_policy=1&enablejsapi=1" frameborder="0"></iframe>
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         @include('layouts.blueciate.contact')
         @endsection
 @push('scripts')
