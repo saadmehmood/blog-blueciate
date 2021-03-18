@@ -2,7 +2,7 @@
 @push('styles')
     <style>
         .video-paragraph {
-            width: 40%;
+            width: 60%;
             height: auto;
             position: relative;
             z-index: 2;
@@ -43,6 +43,18 @@
             <p style="color: #6dab3c;">
                 Robotic process automation (RPA) helps reduce human error by automating business process-related manual tasks, increasing speed and lowering the total cost of ownership by saving you time and effort. Adding intelligence, using  Intelligent Robotic Process Automation with automated decision making, which leads to additional savings through the reduction of analytical effort.
                 To take advantage of AI, you have to move beyond proof of concept. Find out how to scale the impact of AI across your business for maximum value.
+            </p>
+            </div>
+            <h1 class="sec-row-title " style="color: #03a9f4;">
+                Automate your business and see progress in real time
+            </h1>
+            <div class="video-paragraph" style="">
+            <p style="color: #6dab3c;">
+                Create zero-code automations for your business operations. Minimize the chances of human error and focus on the tasks that make a real impact.
+                Intranet/Extranet, Collaboration platform, Document management, Dashboard.
+<br>
+                The solution includes essential features to maintain and even increase productivity throughout the entire business ecosystem in a remote work environment. In addition, it comes with six predefined processes to enable users to immediately begin their daily work:
+                Blueciate and our innovative technology partners focus in Remote Work and how to collaborate the most intuitively, powerful and affordable way humans, system collaborate and transform your current company (BPMS) Business operations into efficient remote work solutions. The platform includes essential features to maintain and even increase productivity throughout the entire business ecosystem, with task automation and traceability ensuring complete control of operations, which is key to a successful remote work strategy.
             </p>
             </div>
             <div class="secondary-btn-search">
