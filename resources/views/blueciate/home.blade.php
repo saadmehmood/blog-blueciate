@@ -7,16 +7,16 @@
             position: relative;
             z-index: 2;
         }
-        .video-paragraph::after {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            content: '';
-            background-color: rgba(215, 224, 252, 0.5);
-            z-index: -1;
-        }
+        /*.video-paragraph::after {*/
+        /*    position: absolute;*/
+        /*    width: 100%;*/
+        /*    height: 100%;*/
+        /*    top: 0;*/
+        /*    left: 0;*/
+        /*    content: '';*/
+        /*    background-color: rgba(215, 224, 252, 0.5);*/
+        /*    z-index: -1;*/
+        /*}*/
     </style>
 @endpush
 
@@ -40,7 +40,7 @@
                 Relationship Management, Low-Code With Hyper-Automation<br> To Unify Your Data in Digital Platform.
             </h1>
             <div class="video-paragraph" style="">
-            <p style="color: #03a9f4;">
+            <p style="color: #6dab3c;">
                 Robotic process automation (RPA) helps reduce human error by automating business process-related manual tasks, increasing speed and lowering the total cost of ownership by saving you time and effort. Adding intelligence, using  Intelligent Robotic Process Automation with automated decision making, which leads to additional savings through the reduction of analytical effort.
                 To take advantage of AI, you have to move beyond proof of concept. Find out how to scale the impact of AI across your business for maximum value.
             </p>
