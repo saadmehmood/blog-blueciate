@@ -77,6 +77,7 @@
         }
     }
 </style>
+@stack('styles')
 @include('layouts.blueciate.header')
     @yield('content')
 @include('layouts.blueciate.footer')
