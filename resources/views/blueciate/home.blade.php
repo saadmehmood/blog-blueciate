@@ -40,10 +40,10 @@
                 Relationship Management, Low-Code With Hyper-Automation<br> To Unify Your Data in Digital Platform.
             </h1>
             <div class="video-paragraph" style="">
-            <h5 style="color: #03a9f4;">
+            <p style="color: #03a9f4;">
                 Robotic process automation (RPA) helps reduce human error by automating business process-related manual tasks, increasing speed and lowering the total cost of ownership by saving you time and effort. Adding intelligence, using  Intelligent Robotic Process Automation with automated decision making, which leads to additional savings through the reduction of analytical effort.
                 To take advantage of AI, you have to move beyond proof of concept. Find out how to scale the impact of AI across your business for maximum value.
-            </h5>
+            </p>
             </div>
             <div class="secondary-btn-search">
                 <button class="button btn btn-success  get-started-btn p-3 mt-4">Get Started</button>
