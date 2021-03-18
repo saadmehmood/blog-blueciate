@@ -16,12 +16,12 @@
             <h5>
                 It's all about
             </h5>
-            <h1 class="sec-row-title ">
-                Relationship Management, Low-Code With Hyper-Automation To Unify Your Data in Digital Platform.
+            <h1 class="sec-row-title " style="color: #03a9f4;">
+                Relationship Management, Low-Code With Hyper-Automation<br> To Unify Your Data in Digital Platform.
             </h1>
-            <h5>
-                That’s why I BlueCiate..
-            </h5>
+            <p style="color: #03a9f4;width: 40%">
+                Robotic process automation (RPA) helps reduce human error by automating business process-related manual tasks, increasing speed and lowering the total cost of ownership by saving you time and effort. Adding intelligence, using  Intelligent Robotic Process Automation with automated decision making, which leads to additional savings through the reduction of analytical effort.
+            </p>
             <div class="secondary-btn-search">
                 <button class="button btn btn-success  get-started-btn p-3 mt-4">Get Started</button>
             </div>
