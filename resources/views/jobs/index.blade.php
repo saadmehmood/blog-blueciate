@@ -104,6 +104,11 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col-8 pb-5">
+                <span><strong>Blueciate</strong></span> team are not just colleagues. We are the best friends ready to step into the breach. The secret of our productivity is constant open-minded communication and creative atmosphere in our green office in the city center.
+                </div>
+            </div>
+            <div class="row">
                 @foreach($posts as $post)
                     @include('jobs/_show', ['post' => $post])
                 @endforeach
