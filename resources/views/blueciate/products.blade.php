@@ -84,7 +84,7 @@
                 <div class="icon-box">
                   <span class="icon flaticon-statistics-1"></span>
                 </div>
-                <h1>EHR</h1>
+                <h1>Team Collaboration</h1>
               </div>
             </div>
 
@@ -94,8 +94,8 @@
                   <div class="icon-box">
                     <span class="icon flaticon-statistics-1"></span>
                   </div>
-                  <h1><a href="">EHR</a></h1>
-                  <a class="read-more" href="">See More<span
+                  <h1><a href="{{ route('univerge-blue') }}">Team Collaboration</a></h1>
+                  <a class="read-more" href="{{ route('univerge-blue') }}">See More<span
                       class="fa fa-angle-double-right"></span></a>
                 </div>
               </div>

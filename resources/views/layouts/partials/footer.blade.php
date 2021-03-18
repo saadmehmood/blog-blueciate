@@ -53,7 +53,7 @@
                             <li><a href="{{ route('cloud-apps-api') }}">Cloud & Digital</a></li>
                             <li><a href="{{ route('internet-of-things') }}">Internet of Things (IoT)</a></li>
                             <li><a href="{{ route('small-business') }}">Small & Mid Size Business</a></li>
-                            <li><a href="{{ route('staffing') }}">Resource Management</a></li>
+                            <li><a href="{{ route('univerge-blue') }}">Teams Collaboration</a></li>
                             <li><a href="{{ route('monitoring') }}">Cloud & Application Monitoring</a></li>
                         </ul>
                     </div>
