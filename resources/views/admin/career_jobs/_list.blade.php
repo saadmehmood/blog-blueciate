@@ -2,6 +2,7 @@
     <caption>{{ trans_choice('posts.count', $posts->total()) }}</caption>
     <thead>
         <tr>
+            <th>@lang('posts.attributes.number')</th>
             <th>@lang('posts.attributes.title')</th>
             <th>@lang('posts.attributes.location')</th>
             <th>@lang('posts.attributes.posted_at')</th>
@@ -12,12 +13,13 @@
     <tbody>
         @foreach($posts as $careerJobs)
             <tr>
+                <td>{{ $careerJobs->id }}</td>
                 <td>{{ link_to_route('admin.jobs.edit', $careerJobs->title, $careerJobs) }}</td>
                 <td>{{  $careerJobs->location }}</td>
                 <td>{{ humanize_date($careerJobs->posted_at, 'd/m/Y H:i:s') }}</td>
                 <td><span class="badge badge-pill badge-secondary">{{ $careerJobs->status }}</span></td>
                 <td>
-                    <a href="{{ route('admin.jobs.edit', $careerJobs) }}" class="btn btn-primary btn-sm">
+                    <a href="{{ route('admin.jobs.show', $careerJobs) }}" class="btn btn-primary btn-sm">
                         <i class="fa fa-pencil" aria-hidden="true"></i>
                     </a>
 

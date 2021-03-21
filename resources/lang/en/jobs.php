@@ -26,6 +26,7 @@ return [
     'thumbnail' => "Thumbnail image",
     'posted_by' => "Posted By",
     'location' => "Location",
+    'status' => "Status",
   ],
 
   'placeholder' => [

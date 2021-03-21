@@ -27,6 +27,7 @@ return [
     'tags' => "Select tags",
     'location' => "Location",
     'description' => "Description",
+    'number' => "#",
   ],
 
   'placeholder' => [

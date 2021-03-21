@@ -41,6 +41,20 @@ class CareerJobController extends Controller
     }
 
     /**
+     * Display the specified resource edit form.
+     * @param CareerJob $careerJob
+     * @return View
+     */
+    public function show($jobSlug): View
+    {
+        $careerJob = CareerJob::where('slug', $jobSlug)->first();
+        return view('admin.career_jobs.show', [
+            'job' => $careerJob,
+            'users' => User::authors()->pluck('name', 'id')
+        ]);
+    }
+
+    /**
      * Show the form for creating a new resource.
      */
     public function create(Request $request): View
