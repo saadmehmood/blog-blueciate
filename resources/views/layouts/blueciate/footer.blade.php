@@ -1,6 +1,11 @@
 
 <!--FOOTER-->
-<div id="footer">
+<div  style="background: url(/blueciate/img/footer-bg.jpg) center top no-repeat fixed;
+    background-size: cover;
+    position: relative;">
+    <div class="mask" style="background-color: rgba(255, 255, 255, 0.92);
+    padding-top: 70px;
+    padding-bottom: 30px;">
     <div class="container">
         <div class="row">
 
@@ -67,6 +72,7 @@
             </div>
 
         </div>
+    </div>
     </div>
 </div>
 <!--FOOTER-->

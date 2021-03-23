@@ -229,4 +229,13 @@ class BlueciateController extends Controller
             'metaDescription' => $metaDescription
         ]);
     }
+    public function remoteWork(): View
+    {
+        $title = 'Business Process Management :- Blueciate Inc';
+        $metaDescription = 'Remote work';
+        return view('blueciate.remote-work', [
+            'title' => $title,
+            'metaDescription' => $metaDescription
+        ]);
+    }
 }

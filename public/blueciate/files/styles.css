@@ -136,13 +136,13 @@ video {
   Define the fonts used in this app and declare silent
   classes to be used in your CSS.
 
-  If you are using a webfont that you're hosting, add 
-  the @embed-font() mixin from base/_mixin-font-face-importer.scs 
+  If you are using a webfont that you're hosting, add
+  the @embed-font() mixin from base/_mixin-font-face-importer.scs
   before you declare your fonts.
 
   Usage: Create a font-family named "interstate-light" using a font at /fonts/interstate_light-webfont.woff (and other extensions)
   @include embed-font("interstate-light", "/fonts/interstate_light-webfont");
-  
+
   If you are using Google Fonts, you can add the
   import code before you declare your fonts.
 
@@ -232,7 +232,7 @@ body {
 
   These are made active by adding classes to the HTML
   element. A JS system to toggle these classes is in
-  the works. 
+  the works.
 
   This partial requires:
   * base/_vars.scss
@@ -241,7 +241,7 @@ body {
 -------------------------------------------------------- */
 /* @highlight elements at breakpoint
 --------------------------------------------------------
-  
+
   Highlight an element at certain breakpoints by changing
   its color;
 
@@ -302,7 +302,7 @@ body {
 
 /* @highlight grids in dev mode
 --------------------------------------------------------
-  
+
   Indicate grids using responsive widths at certain breakpoints.
 
   Add .dev--grids to the HTML element to enable this.
@@ -390,7 +390,7 @@ body {
 
 /* @show the current breakpoint
 --------------------------------------------------------
-  
+
   Adds a badge to the bottom right of the body to show
   the current breakpoint.
 
@@ -1505,7 +1505,7 @@ img {
 -----------------------------------------------------------
 
   use this classes to embeded full background with content
-  
+
   Example:
 
   <div class="img-holder">
@@ -1859,7 +1859,7 @@ em {
     <div class="g">...</div>
     <div class="g">...</div>
   </div>
-  
+
   NOTE: see some test styles at the bottom of this partial
   Remove them if you don't need them.
 
@@ -2090,13 +2090,13 @@ em {
     <div class="g"><img src="http://fillmurray.com/500/300"></div>
     <div class="g"><img src="http://fillmurray.com/500/300"></div>
   </div><!--/gw-->
-  
-  
+
+
 
 -----------------------------------------------------  */
 /*
-  
-  Widths at default Viewport 
+
+  Widths at default Viewport
 
 ---------------------------------------------------- */
 .one-up > * {
@@ -2147,8 +2147,8 @@ em {
   width: 8.33333%;
 }
 
-/* 
-  
+/*
+
   Responsive ups at $breakpoint__xs
 
 ---------------------------------------------------- */
@@ -2201,8 +2201,8 @@ em {
     width: 8.33333%;
   }
 }
-/* 
-  
+/*
+
   Responsive ups at $breakpoint__sm
 
 ---------------------------------------------------- */
@@ -2255,8 +2255,8 @@ em {
     width: 8.33333%;
   }
 }
-/* 
-  
+/*
+
   Responsive ups at $breakpoint__md
 
 ---------------------------------------------------- */
@@ -2309,8 +2309,8 @@ em {
     width: 8.33333%;
   }
 }
-/* 
-  
+/*
+
   Responsive ups at $breakpoint__lg
 
 ---------------------------------------------------- */
@@ -2363,8 +2363,8 @@ em {
     width: 8.33333%;
   }
 }
-/* 
-  
+/*
+
   Responsive ups at $breakpoint__xl
 
 ---------------------------------------------------- */
@@ -2417,8 +2417,8 @@ em {
     width: 8.33333%;
   }
 }
-/* 
-  
+/*
+
   Responsive ups at $breakpoint__xxl
 
 ---------------------------------------------------- */
@@ -2495,8 +2495,8 @@ em {
 
 ---------------------------------------------------------  */
 /*
-  
-  Widths at default Viewport 
+
+  Widths at default Viewport
 
 ---------------------------------------------------- */
 .one-whole {
@@ -2811,8 +2811,8 @@ em {
   width: 100%;
 }
 
-/* 
-  
+/*
+
   Responsive widths at $breakpoint__xs
 
 ---------------------------------------------------- */
@@ -3129,8 +3129,8 @@ em {
     width: 100%;
   }
 }
-/* 
-  
+/*
+
   Responsive widths at $breakpoint__sm
 
 ---------------------------------------------------- */
@@ -3447,8 +3447,8 @@ em {
     width: 100%;
   }
 }
-/* 
-  
+/*
+
   Responsive widths at $breakpoint__md
 
 ---------------------------------------------------- */
@@ -3765,8 +3765,8 @@ em {
     width: 100%;
   }
 }
-/* 
-  
+/*
+
   Responsive widths at $breakpoint__lg
 
 ---------------------------------------------------- */
@@ -4083,8 +4083,8 @@ em {
     width: 100%;
   }
 }
-/* 
-  
+/*
+
   Responsive widths at $breakpoint__xl
 
 ---------------------------------------------------- */
@@ -4401,8 +4401,8 @@ em {
     width: 100%;
   }
 }
-/* 
-  
+/*
+
   Responsive widths at $breakpoint__xxl
 
 ---------------------------------------------------- */
@@ -5031,8 +5031,8 @@ em {
   modules/_callouts.scss
 --------------------------------------------------------
 
-  Callouts, are sections of featured content that usually 
-  contain an icon, a title, and some text. These are 
+  Callouts, are sections of featured content that usually
+  contain an icon, a title, and some text. These are
   usually in a row, and call attention to highlighted features.
 
   Example: Callout
@@ -5684,7 +5684,7 @@ header#main.video-wrapper:after {
 }
 
 /* ==========================================================================
-   header Contact image 
+   header Contact image
    ========================================================================== */
 header#main.contact-image:after {
   position: absolute;
@@ -5802,7 +5802,7 @@ header#main.type-writer:after {
 }
 
 /* ==========================================================================
-   Main Navigation and Dropdown menu 
+   Main Navigation and Dropdown menu
    ========================================================================== */
 #content {
   /*=========================================
@@ -6321,7 +6321,7 @@ article#services .left-row {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   /* ==========================================================================
-     Client section 
+     Client section
      ========================================================================== */
 }
 article#services .left-row .client {
@@ -6454,7 +6454,7 @@ article#services .boxa p {
 }
 
 /* ==========================================================================
-   services pages 2 
+   services pages 2
    ========================================================================== */
 article.services_2 section {
   background: #fff;
@@ -6805,7 +6805,7 @@ article.services_3 section:nth-of-type(2) aside small {
 }
 
 /* ==========================================================================
-   main protfolio images 
+   main protfolio images
    ========================================================================== */
 #portfolio a {
   display: block;
@@ -7752,7 +7752,7 @@ blog thumbs wrapper
 }
 
 /* ==========================================================================
-   footer 
+   footer
    ========================================================================== */
 .site-footer {
   padding: 0 !important;
@@ -7846,7 +7846,7 @@ blog thumbs wrapper
 }
 
  /* ==========================================================================
-Blog Page style 1 Metro 
+Blog Page style 1 Metro
 ========================================================================== */
 .blog-wrapper.long {
   min-height: 45.5625em !important;
@@ -8687,14 +8687,14 @@ section.content button:hover {
 /* ==========================================================================
    Contacts US Page
    ========================================================================== */
-/* 
- ######     #######   ##    ##   ########      ###      ######    ########   
-##    ##   ##     ##  ###   ##      ##        ## ##    ##    ##      ##      
-##         ##     ##  ####  ##      ##       ##   ##   ##            ##      
-##         ##     ##  ## ## ##      ##      ##     ##  ##            ##      
-##         ##     ##  ##  ####      ##      #########  ##            ##      
-##    ##   ##     ##  ##   ###      ##      ##     ##  ##    ##      ##      
- ######     #######   ##    ##      ##      ##     ##   ######       ##      
+/*
+ ######     #######   ##    ##   ########      ###      ######    ########
+##    ##   ##     ##  ###   ##      ##        ## ##    ##    ##      ##
+##         ##     ##  ####  ##      ##       ##   ##   ##            ##
+##         ##     ##  ## ## ##      ##      ##     ##  ##            ##
+##         ##     ##  ##  ####      ##      #########  ##            ##
+##    ##   ##     ##  ##   ###      ##      ##     ##  ##    ##      ##
+ ######     #######   ##    ##      ##      ##     ##   ######       ##
  */
 /*==========================================
 =            Form Section Style            =
@@ -8806,14 +8806,14 @@ section.content button:hover {
   text-decoration: none;
 }
 
-/* 
-########   ########   ####   ######    ####  ##    ##    ######    
-##     ##  ##     ##   ##   ##    ##    ##   ###   ##   ##    ##   
-##     ##  ##     ##   ##   ##          ##   ####  ##   ##         
-########   ########    ##   ##          ##   ## ## ##   ##   ####  
-##         ##   ##     ##   ##          ##   ##  ####   ##    ##   
-##         ##    ##    ##   ##    ##    ##   ##   ###   ##    ##   
-##         ##     ##  ####   ######    ####  ##    ##    ######    
+/*
+########   ########   ####   ######    ####  ##    ##    ######
+##     ##  ##     ##   ##   ##    ##    ##   ###   ##   ##    ##
+##     ##  ##     ##   ##   ##          ##   ####  ##   ##
+########   ########    ##   ##          ##   ## ## ##   ##   ####
+##         ##   ##     ##   ##          ##   ##  ####   ##    ##
+##         ##    ##    ##   ##    ##    ##   ##   ###   ##    ##
+##         ##     ##  ####   ######    ####  ##    ##    ######
  */
 /* ==========================================================================
    pricing tables section / Website
@@ -8860,7 +8860,7 @@ section.content button:hover {
   font-size: .20em;
 }
 #pricing section article aside .upper span:after {
-   
+
   right: 3px;
   bottom: 5px;
   content: "$";
@@ -8986,7 +8986,7 @@ section.content button:hover {
 /*# sourceMappingURL=styles.css.map */
 .meet-team-social-follow{
 	margin: 0px 0;
-     
+
 }
 .meet-team-social-follow a{
 	margin: 0 5px 0;
@@ -9035,14 +9035,14 @@ input[type="checkbox"].input-validation-error {
 }
 
 
-/* 
-########   ########   ####   ######    ####  ##    ##    ######    
-##     ##  ##     ##   ##   ##    ##    ##   ###   ##   ##    ##   
-##     ##  ##     ##   ##   ##          ##   ####  ##   ##         
-########   ########    ##   ##          ##   ## ## ##   ##   ####  
-##         ##   ##     ##   ##          ##   ##  ####   ##    ##   
-##         ##    ##    ##   ##    ##    ##   ##   ###   ##    ##   
-##         ##     ##  ####   ######    ####  ##    ##    ######    
+/*
+########   ########   ####   ######    ####  ##    ##    ######
+##     ##  ##     ##   ##   ##    ##    ##   ###   ##   ##    ##
+##     ##  ##     ##   ##   ##          ##   ####  ##   ##
+########   ########    ##   ##          ##   ## ## ##   ##   ####
+##         ##   ##     ##   ##          ##   ##  ####   ##    ##
+##         ##    ##    ##   ##    ##    ##   ##   ###   ##    ##
+##         ##     ##  ####   ######    ####  ##    ##    ######
  */
 /* ==========================================================================
    pricing tables section / Product
@@ -9089,7 +9089,7 @@ input[type="checkbox"].input-validation-error {
   font-size: .20em;
 }
 #propricing section article aside .upper span:after {
-   
+
   right: 3px;
   bottom: 5px;
   content: "$";
@@ -9176,3 +9176,11 @@ input[type="checkbox"].input-validation-error {
     padding: 0.7em 1em;
     text-decoration: none;
 }
+.sign_up {
+    color: #e7e7e7;
+    font-size: 13px;
+    height: 33px;
+    margin-right: 30px;
+    margin-top: 0;
+    padding-top: 6px;
+    text-align: right;
