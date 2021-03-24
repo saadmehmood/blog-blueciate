@@ -5,39 +5,6 @@
         font-family: 'Open Sans',sans-serif;
         background-color: #f5f5f5;
     }
-    .modal {
-        z-index: 1050;
-    }
-    .video-overlay {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        opacity: 0.75;
-        color: transparent;
-        cursor: pointer;
-    }
-    .modal-lg {
-        max-width: 60%;
-    }
-    .video-iframe {
-        width: 100%;
-        height: 600px;
-    }
-    .carousel-item {
-        text-align: center;
-    }
-    .modal-content {
-        background-color: transparent;
-        border: 0px;
-    }
-    .carousel-control-prev, .carousel-control-next {
-        width: 5%;
-    }
-    .modal-header {
-        border: 0px;
-    }
     article#services.hh-services section {
         padding: 1.3em 4.3125em 1.3em 4.3125em;
     }
@@ -60,9 +27,9 @@
         font-size: 26px;
     }
     .heading-small {
-        color: #6dab3c;
+        color: #0070c0;
         font-weight: bold;
-        font-size: 16px
+        font-size: 20px
     }
     p.paragraph {
         color: #707577;
@@ -77,86 +44,17 @@
     .text-highlight {
         color: #00b050;
     }
-    .icon-holder {
-        width: 35px;
-    }
-    .icon-title {
-        color: #707577;
-        font-family: 'Open Sans',sans-serif;
-        font-weight: 300;
-        font-size: 18px;
-    }
-    .fa-3 {
-        font-size: 2rem;
-        color: #6dab3c;
-    }
-    .low-code-video {
-        width: 80%;
-        margin: 0 auto;
-    }
-    .top-on-img {
-        position: absolute;
-        width: 72%;
-        top: 14.8%;
-        left: 14%;
-    }
     p.paragraph-small {
         color: #707577;
         font-family: 'Open Sans',sans-serif;
-        font-size: 17px;
-        line-height: 25px;
+        font-size: 14px;
+        line-height: 22px;
         font-style: normal;
         font-weight: 300;
     }
-    .step-box {
-        padding: 20px;
-        border-radius: 3px;
-        background: #fff;
-        box-shadow: 0 0 13px rgba(33,33,33,.07);
-        min-height: 250px;
-    }
-    .step-box .icon-holder {
-        width: 100%;
-        text-align: center;
-    }
-    .step-box .icon-title {
-        width: 100%;
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        color: #303030;
-        font-size: 16px;
-        font-weight: 600;
-    }
-    .step-box .step-description {
-        color: #707577;
-        font-family: 'Open Sans',sans-serif;
-        font-size: 15px;
-        line-height: 25px;
-        font-style: normal;
-        font-weight: 300;
-    }
-    .step-box .icon-holder img {
-        width: 35px;
-    }
-    .dashboard .icon-holder {
-        width: 60px; height: 60px;
-    }
-    .dashboard .icon-title {
-        font-size: 22px; font-weight: 600; color: #383838;
-    }
-    .section-7 .icon-img {
-        width: 60px;
-        height: 60px;
-    }
-    .section-13 .icon-img {
-        width: 80px;
-        height: 80px;
-    }
-    .section-13 .icon-title {
-        font-size: 18px;
-        font-weight: 600;
-        color: #383838;
+    .box {
+        border: 1px solid;
+        border-color: #0e0b04;
     }
     .mt-150 {
         margin-top: 150px;
@@ -276,6 +174,9 @@
     .bg-white{
         background: white;
     }
+    .btn:focus, btn-steps:focus {
+        outline: none;
+    }
     .btn-check:checked+.btn-secondary {
         color: #fff;
         background-color: #00b050;
@@ -285,6 +186,33 @@
         color: #fff;
         background-color: #0070c0;
         border-color: #0070c0;
+    }
+    .btn-check:checked+.btn-team-size {
+        color: #fff;
+        background-color: #00b050;
+        border-color: #00b050;
+    }
+    .btn-team-size {
+        width: 100%;
+        color: #fff;
+        background-color: #0070c0;
+        border-color: #00b050;
+        border-radius: 0;
+    }
+    .btn-check:checked+.btn-steps, .btn-steps:hover {
+        color: #fff;
+        background-color: #0070c0;
+        border-color: #0070c0;
+    }
+    .btn-steps {
+        color:  #0070c0;
+        font-weight: 600;
+        line-height: 50px;
+        font-size: 2rem;
+        width: 100%;
+        background-color: white;
+        border-color: #0070c0;
+        border-radius: 0;
     }
 
     .btn{
@@ -335,15 +263,22 @@
             </div>
             <div class="row mt-lg-4">
                 <div class="col-md-4 px-0">
-                    <h2 class="heading text-center">Application Development</h2>
+
+                    <input type="radio" class="btn-check" name="options" id="steps-ad" autocomplete="off">
+                    <label class="btn btn-steps" for="steps-ad">Application Development</label>
+{{--                    <h2 class="heading text-center">Application Development</h2>--}}
 
                 </div>
                 <div class="col-md-4 px-0">
-                    <h2 class="heading text-center">Production Suport</h2>
+                    <input type="radio" class="btn-check" name="options" id="steps-ps" autocomplete="off">
+                    <label class="btn btn-steps" for="steps-ps">Production Suport</label>
+{{--                    <h2 class="heading text-center">Production Suport</h2>--}}
 
                 </div>
                 <div class="col-md-4 px-0">
-                    <h2 class="heading text-center">Networking Support</h2>
+                    <input type="radio" class="btn-check" name="options" id="steps-ns" autocomplete="off">
+                    <label class="btn btn-steps" for="steps-ns">Networking Support</label>
+{{--                    <h2 class="heading text-center">Networking Support</h2>--}}
 
                 </div>
             </div>
@@ -389,51 +324,136 @@
                 <div class="col-12 pr-0 bg-white pl-lg-2 py-lg-3">
                     <h2 class="heading">What kind of <span class="text-highlight font-size-36">skills</span> you required from your team?</h2>
 
-                    <input type="checkbox" class="btn-check" name="options" id="option1" autocomplete="off">
-                    <label class="btn btn-secondary" for="option1">Javascript</label>
+                    <?php
+                    $skills = ['Javascript', 'React Js', 'Node Js', 'Html/Css', 'Php', 'Python', 'Ruby On Rails', 'React Native', 'Angular', 'Angular Js', 'Swift', 'AWS', 'C#', 'Android', 'Bootstrap', 'Objective C', 'Typescript', 'My Sql', 'Sql', 'Java'];
+                    $count = 1;
+                    foreach ($skills as $skill){
+                        ?>
 
-                    <input type="checkbox" class="btn-check" name="options" id="option2" autocomplete="off">
-                    <label class="btn btn-secondary" for="option2">React Js</label>
+                    <input type="checkbox" class="btn-check" name="skills" id="skill{{ $count }}" autocomplete="off">
+                    <label class="btn btn-secondary" for="skill{{ $count }}">{{ $skill }}</label>
 
-                    <input type="checkbox" class="btn-check" name="options" id="option3" autocomplete="off">
-                    <label class="btn btn-secondary" for="option3">Node Js</label>
-
-                    <input type="checkbox" class="btn-check" name="options" id="option4" autocomplete="off">
-                    <label class="btn btn-secondary" for="option4">Html/Css</label>
-                    <input type="checkbox" class="btn-check" name="options" id="option5" autocomplete="off">
-                    <label class="btn btn-secondary" for="option5">Php</label>
-                    <input type="checkbox" class="btn-check" name="options" id="option6" autocomplete="off">
-                    <label class="btn btn-secondary" for="option6">Python</label>
-                    <input type="checkbox" class="btn-check" name="options" id="option7" autocomplete="off">
-                    <label class="btn btn-secondary" for="option7">Ruby On Rails</label>
-                    <input type="checkbox" class="btn-check" name="options" id="option7" autocomplete="off">
-                    <label class="btn btn-secondary" for="option7">React Native</label>
-                    <input type="checkbox" class="btn-check" name="options" id="option7" autocomplete="off">
-                    <label class="btn btn-secondary" for="option7">Angular</label>
-                    <input type="checkbox" class="btn-check" name="options" id="option7" autocomplete="off">
-                    <label class="btn btn-secondary" for="option7">Angular Js</label>
-                    <input type="checkbox" class="btn-check" name="options" id="option7" autocomplete="off">
-                    <label class="btn btn-secondary" for="option7">Swift</label>
-                    <input type="checkbox" class="btn-check" name="options" id="option7" autocomplete="off">
-                    <label class="btn btn-secondary" for="option7">AWS</label>
-                    <input type="checkbox" class="btn-check" name="options" id="option7" autocomplete="off">
-                    <label class="btn btn-secondary" for="option7">C#</label>
-                    <input type="checkbox" class="btn-check" name="options" id="option7" autocomplete="off">
-                    <label class="btn btn-secondary" for="option7">Android</label>
-                    <input type="checkbox" class="btn-check" name="options" id="option7" autocomplete="off">
-                    <label class="btn btn-secondary" for="option7">Bootstrap</label>
-                    <input type="checkbox" class="btn-check" name="options" id="option7" autocomplete="off">
-                    <label class="btn btn-secondary" for="option7">Objective C</label>
-                    <input type="checkbox" class="btn-check" name="options" id="option7" autocomplete="off">
-                    <label class="btn btn-secondary" for="option7">Typescript</label>
-                    <input type="checkbox" class="btn-check" name="options" id="option7" autocomplete="off">
-                    <label class="btn btn-secondary" for="option7">My Sql</label>
-                    <input type="checkbox" class="btn-check" name="options" id="option7" autocomplete="off">
-                    <label class="btn btn-secondary" for="option7">Sql</label>
-                    <input type="checkbox" class="btn-check" name="options" id="option7" autocomplete="off">
-                    <label class="btn btn-secondary" for="option7">Java</label>
+                    <?php
+                    $count++;
+                    } ?>
                 </div>
             </div>
+
+            <div class="row mt-lg-4">
+                <div class="col-12 px-0">
+                    <h2 class="heading mb-0">Select your Right Team  Size?</h2>
+                </div>
+            </div>
+
+            <div class="row mt-lg-4">
+                <div class="col-12 pr-0 bg-white pl-lg-2 py-lg-3">
+                    <h2 class="heading">How many <span class="text-highlight font-size-36">team</span> members do you required?</h2>
+
+                    <div class="row px-5">
+                        <?php
+                        $teamSize = [2,3,4,5,6,7, 'Not sure'];
+                        $count = 1;
+                        foreach ($teamSize as $team){
+                            ?>
+                        <div class="col px-0">
+                    <input type="radio" class="btn-check" name="options" id="team{{ $count }}" autocomplete="off">
+                    <label class="btn btn-team-size" for="team{{ $count }}">{{ $team }}</label>
+                        </div>
+
+                        <?php
+                        $count++;
+                        } ?>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-lg-4 bg-white box-shadow-bottom">
+                <div class="col-md-6 text-center p-3">
+                    <img src="/blueciate/img/colleagues-giving-fist-bump.jpg" alt="Blueciate Team">
+                </div>
+
+                <div class="col-md-6 px-3" style="display: none;">
+                    <h2 class="heading">Tell us about <span class="text-highlight">Yourself</span></h2>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-2">
+                                <label for="full_name" class="form-label">Full name</label>
+                                <input type="text" name="full_name" class="form-control" id="full_name" placeholder="Full name">
+                            </div>
+                            <div class="mb-2">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-2">
+                                <label for="Phone" class="form-label">Phone</label>
+                                <input type="text" class="form-control" id="Phone" placeholder="Phone">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-2">
+                                <label for="company_name" class="form-label">Company name</label>
+                                <input type="text" name="company_name" class="form-control" id="company_name" placeholder="Company name">
+                            </div>
+                            <div class="mb-2">
+                                <label for="message" class="form-label">Your Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" style="height: 115px"></textarea>
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button class="btn btn-primary" type="button">Send</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 px-3">
+                    <h2 class="heading mt-lg-5">Thank you for your business we will get back to you shortly.</h2>
+                </div>
+            </div>
+
+
+            <div class="row mt-lg-4">
+                <div class="col-md-12 p-0">
+                    <h2 class="heading">Join the <span class="text-highlight">Blueciate</span> Future <span class="text-highlight">Digital Transformation</span> Team to build, automate & deploy your applications and you completely focus on your business needs.</h2>
+                </div>
+            </div>
+
+
+            <div class="row mt-lg-4">
+                <div class="col-md-12 p-0">
+                    <h2 class="heading">Why <span class="text-highlight">Blueciate</span>?</h2>
+                </div>
+            </div>
+
+            <div class="row bg-white p-2">
+                <h2><span class="text-highlight">100%</span> Confidence</h2>
+                <p class="paragraph pb-lg-5">Our values are constant and our processes are transparent, you wil always know what we are working on, and why</p>
+                <div class="col box px-3 py-4 mx-2">
+                    <h2 class="heading-small">We keep your ideas <span class="text-highlight">safe</span></h2>
+                    <p class="paragraph-small">It's our responsibility to foster trust your Intellectual Property rights are fully protected and code is yours.</p>
+                </div>
+                <div class="col box px-3 py-4 mx-2">
+                    <h2 class="heading-small">We deliver <span class="text-highlight">on-time</span></h2>
+                    <p class="paragraph-small">We remain dedicated to a high standard of competency and share timely update on progress of work with you.</p>
+                </div>
+                <div class="col box px-3 py-4 mx-2">
+                    <h2 class="heading-small">We're <span class="text-highlight">easy</span> to work with</h2>
+                    <p class="paragraph-small">Regular skype meetings, demo sessions and feedback sessions ensure we meet your demand.</p>
+                </div>
+                <div class="col box px-3 py-4 mx-2">
+                    <h2 class="heading-small"><span class="text-highlight">Augment</span> your R&D team</h2>
+                    <p class="paragraph-small">We access to dedicated pool of 150+ software and hardware engineers.</p>
+                </div>
+                <div class="col box px-3 py-4 mx-2">
+                    <h2 class="heading-small">Build an  <span class="text-highlight">idea</span> from scratch</h2>
+                    <p class="paragraph-small">Guided by top business consultants and senior solution architects.</p>
+                </div>
+                <div class="col box px-3 py-4 mx-2">
+                    <h2 class="heading-small">Transform your<span class="text-highlight">enterprise</span></h2>
+                    <p class="paragraph-small">By modernizing legacy systems and exploiting advances in technologies.</p>
+                </div>
+            </div>
+
         </div>
         @include('layouts.blueciate.contact')
         @endsection
@@ -452,4 +472,46 @@
 <!--Latest compiled JavaScript-->
 <script src="/blueciate/index_files/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+
+    <script>
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+        $('#upload-image-form').submit(function(e) {
+            e.preventDefault();
+            let formData = new FormData(this);
+            $('#first_name_error').text('');
+            $('#last_name_error').text('');
+            $('#email_error').text('');
+            $('#phone_error').text('');
+            $('#file_error').text('');
+
+            $.ajax({
+                type:'POST',
+                url: `/upload-images`,
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: (response) => {
+                    if (response) {
+                        this.reset();
+                        $('#application_form').hide();
+                        $('#thanks_message').show();
+                    }
+                },
+                error: function(response){
+                    console.log(response.errors);
+                    $('#first_name_error').text(response.responseJSON.errors.first_name);
+                    $('#last_name_error').text(response.responseJSON.errors.last_name);
+                    $('#email_error').text(response.responseJSON.errors.email);
+                    $('#phone_error').text(response.responseJSON.errors.phone);
+                    $('#resume_error').text(response.responseJSON.errors.resume);
+                }
+            });
+        });
+
+    </script>
 @endpush
