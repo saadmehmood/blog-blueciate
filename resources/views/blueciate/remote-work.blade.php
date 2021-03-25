@@ -3,7 +3,7 @@
     body{
 
         font-family: 'Open Sans',sans-serif;
-        background-color: #f5f5f5;
+        /*background-color: #f5f5f5;*/
     }
     article#services.hh-services section {
         padding: 1.3em 4.3125em 1.3em 4.3125em;
@@ -174,7 +174,7 @@
     .bg-white{
         background: white;
     }
-    .btn:focus, btn-steps:focus {
+    .btn:focus, .btn-steps:focus {
         outline: none;
     }
     .btn-check:checked+.btn-secondary {
@@ -182,9 +182,9 @@
         background-color: #00b050;
         border-color: #00b050;
     }
-    .btn-secondary {
-        color: #fff;
-        background-color: #0070c0;
+    .btn-secondary, .btn-secondary:hover, .btn-secondary:focus {
+        color: #0070c0;
+        background-color: #fff;
         border-color: #0070c0;
     }
     .btn-check:checked+.btn-team-size {
@@ -194,15 +194,15 @@
     }
     .btn-team-size {
         width: 100%;
-        color: #fff;
-        background-color: #0070c0;
-        border-color: #00b050;
+        color: #0070c0;
+        background-color: #fff;
+        border-color: #0070c0;
         border-radius: 0;
     }
     .btn-check:checked+.btn-steps, .btn-steps:hover {
         color: #fff;
-        background-color: #0070c0;
-        border-color: #0070c0;
+        background-color: #00b050;
+        border-color: #00b050;
     }
     .btn-steps {
         color:  #0070c0;
@@ -220,6 +220,14 @@
         margin-bottom: 10px;
         text-transform: none;
     }
+    .top-banner {
+        background-image: url(/blueciate/img/trm_bg.jpg);
+        height: 100%;
+        padding-bottom: 70px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 </style>
 @endpush
 @extends('layouts.blueciate-3')
@@ -227,43 +235,47 @@
         <?php
         $images = ['remote-work.png'];
         ?>
-        @include('blueciate.image-slider')
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 px-0 box-shadow-bottom bg-white pt-lg-5">
-                    <h2 class="font-size-48 heading text-center">Your Blueciate <span class="text-highlight">RemoteWork</span> TEAM for Digital Transformation!!!</h2>
-                    <h2 class="font-size-36 heading text-center">Helping your business  SCALE UP and go to the next level ….</h2>
+{{--        @include('blueciate.image-slider')--}}
+        <div class="container-fluid top-banner">
+            <div class="row" style="min-height: 400px">
+                <div class="col">
+                    <h2 class="heading"><strong>Blueciate</strong> helping your business to be ready for what is next …..</h2>
+                    <br>
+                    <br>
+                    <br>
+                    <h2 class="heading" style="font-size: 72px; line-height: 75px">Selecet your <span class="text-highlight">RemoteWork</span><br> software engineering team for<br> Digital Transformation in 48 hours!</h2>
                 </div>
             </div>
+        </div>
+
+        <div class="container">
             <div class="row mt-lg-4">
-                <div class="col-md-6 px-0">
-                    <h2 class="font-size-48 heading text-center pt-lg-5">Build Remote Engineering Team in <span class="text-highlight">24 hours</span></h2>
+                <div class="col-md-12 px-0">
+                    <h2 class="font-size-48 heading text-center pt-lg-5">Build Remote Engineering Team</h2>
+                    <br>
                     <div class="text-center">
                         <a href="#" class="btn-blue">Get Started</a>
                     </div>
 
                 </div>
-
-                <div class="col-md-6 text-center p-0">
-                    <img src="/blueciate/img/team-trans-bg.png" alt="Blueciate Team" style="width: 80%">
-                </div>
-            </div>
-            <div class="row mt-lg-4">
-                <div class="col-md-12 px-0 bg-white py-lg-3">
-                    <h2 class="font-size-48 heading text-center">Select your <span class="text-highlight">Next Generation Digital Platform Transformation Team</span> in less than 48 hours!</h2>
-
-                </div>
             </div>
             <div class="row mt-lg-4">
                 <div class="col-md-12 px-0">
-                    <h2 class="font-size-48 heading text-center">How? <br> <span class="text-highlight font-size-36">Only in 4 easy steps.</span></h2>
+                    <h2 class="font-size-48 heading text-center">How? <br><span style="color: grey; font-size: 30px">in</span> <span class="text-highlight font-size-36"> <br>4 easy steps.</span></h2>
 
                 </div>
             </div>
+            <br>
+            <br>
+            <br>
             <form method="post" id="upload-image-form" enctype="multipart/form-data">
                 @csrf
             <div class="row mt-lg-4">
+                <div class="col-12 pb-lg-5">
+                    <h2 class="font-size-48 heading text-center">I want</h2>
+                </div>
+                <br>
+                <br>
                 <div class="col-md-4 px-0">
 
                     <input type="radio" class="btn-check" name="work_type" id="steps-ad" autocomplete="off" value="Application Development">
@@ -285,19 +297,32 @@
                 </div>
             </div>
 
-            <div class="row mt-lg-4">
-                <div class="col-12 px-0">
-                    <h2 class="heading mb-0">Lets get started and Build your Dream Team.</h2>
-                    <p class="paragraph text-left">(select your Blueciate Remote Development Team.)</p>
-                </div>
-            </div>
+{{--            <div class="row mt-lg-4">--}}
+{{--                <div class="col-12 px-0">--}}
+{{--                    <h2 class="heading mb-0">Lets get started and Build your Dream Team.</h2>--}}
+{{--                    <p class="paragraph text-left">(select your Blueciate Remote Development Team.)</p>--}}
+{{--                </div>--}}
+{{--            </div>--}}
 
             <div class="row mt-lg-4">
                 <div class="col-12 pr-0 bg-white pl-lg-2 py-lg-3">
-                    <h2 class="heading">What can <span class="text-highlight font-size-36">remote team</span> do for you?</h2>
+                    <h2 class="heading mb-0">Lets get started and Build your Dream Team to define your scope of work.</h2>
+                    <p class="paragraph text-left">(select your Blueciate Remote Development Team.)</p>
 
                     <?php
-                    $options = ['Web Development', 'Mobile Development', 'Data Engineering', 'Software Integration', 'DevOps & Infrastructure', 'Machine Learning', 'Other Mission'];
+                    $options = [
+                        'Web Development',
+                        'Mobile Development',
+                        'Data Engineering',
+                        'Software Integration',
+                        'DevOps & Infrastructure',
+                        'Machine Learning',
+                        'Other Mission',
+                        'Low code',
+                        'Artifictal Intellegence(AI)',
+                        'RPA Automation',
+                        'iBPMS'
+                    ];
                     $count = 1;
                     foreach ($options as $option){
                     ?>
@@ -311,15 +336,15 @@
                 </div>
             </div>
 
-            <div class="row mt-lg-4">
-                <div class="col-12 px-0">
-                    <h2 class="heading mb-0">Select the right skill set & Platform?</h2>
-                </div>
-            </div>
+{{--            <div class="row mt-lg-4">--}}
+{{--                <div class="col-12 px-0">--}}
+{{--                    <h2 class="heading mb-0">Select the right skill set & Platform?</h2>--}}
+{{--                </div>--}}
+{{--            </div>--}}
 
             <div class="row mt-lg-4">
                 <div class="col-12 pr-0 bg-white pl-lg-2 py-lg-3">
-                    <h2 class="heading">What kind of <span class="text-highlight font-size-36">skills</span> you required from your team?</h2>
+                    <h2 class="heading">Select the right skill set & Platform?</h2>
 
                     <?php
                     $skills = ['Javascript', 'React Js', 'Node Js', 'Html/Css', 'Php', 'Python', 'Ruby On Rails', 'React Native', 'Angular', 'Angular Js', 'Swift', 'AWS', 'C#', 'Android', 'Bootstrap', 'Objective C', 'Typescript', 'My Sql', 'Sql', 'Java'];
@@ -336,17 +361,17 @@
                 </div>
             </div>
 
-            <div class="row mt-lg-4">
-                <div class="col-12 px-0">
-                    <h2 class="heading mb-0">Select your Right Team  Size?</h2>
-                </div>
-            </div>
+{{--            <div class="row mt-lg-4">--}}
+{{--                <div class="col-12 px-0">--}}
+{{--                    <h2 class="heading mb-0">Select your Right Team  Size?</h2>--}}
+{{--                </div>--}}
+{{--            </div>--}}
 
             <div class="row mt-lg-4">
                 <div class="col-12 pr-0 bg-white pl-lg-2 py-lg-3">
-                    <h2 class="heading">How many <span class="text-highlight font-size-36">team</span> members do you required?</h2>
+                    <h2 class="heading">Select your Right Team  Size?</h2>
 
-                    <div class="row px-5">
+                    <div class="row px-2">
                         <?php
                         $teamSize = [2,3,4,5,6,7, 'Not sure'];
                         $count = 1;
@@ -365,11 +390,8 @@
             </div>
 
             <div class="row mt-lg-4 bg-white box-shadow-bottom">
-                <div class="col-md-6 text-center p-3">
-                    <img src="/blueciate/img/colleagues-giving-fist-bump.jpg" alt="Blueciate Team">
-                </div>
 
-                <div class="col-md-6 px-3" id="user_form_data">
+                <div class="col-md-12 px-3" id="user_form_data">
                     <h2 class="heading">Tell us about <span class="text-highlight">Yourself</span></h2>
                     <div class="row">
                         <div class="col">
@@ -385,15 +407,15 @@
                                 <label for="Phone" class="form-label">Phone</label>
                                 <input type="text" name="phone" class="form-control" id="Phone" placeholder="Phone" required>
                             </div>
-                        </div>
-                        <div class="col">
                             <div class="mb-2">
                                 <label for="company_name" class="form-label">Company name</label>
                                 <input type="text" name="company_name" class="form-control" id="company_name" placeholder="Company name">
                             </div>
+                        </div>
+                        <div class="col">
                             <div class="mb-2">
                                 <label for="message" class="form-label">Your Message</label>
-                                <textarea class="form-control" id="message" name="message" rows="4" style="height: 115px"></textarea>
+                                <textarea class="form-control" id="message" name="message" rows="4" style="height: 272px"></textarea>
                             </div>
                         </div>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
@@ -413,20 +435,30 @@
 
 
             <div class="row mt-lg-4">
-                <div class="col-md-12 p-0">
-                    <h2 class="heading">Join the <span class="text-highlight">Blueciate</span> Future <span class="text-highlight">Digital Transformation</span> Team to build, automate & deploy your applications and you completely focus on your business needs.</h2>
+                <div class="col-md-6 p-0">
+                    <p class="paragraph">
+                        Take your business to the next level with
+                        fully integrated unified communications.
+                        <br>
+                        UNIVERGE BLUE CONNECT is an easy-to-use cloud-based communications
+                        platform that helps employees to be more productive and collaborative.
+                        It includes a full-featured phone system combined with chat, web/video
+                        conferencing, and file sync, share, and backup capabilities.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="/blueciate/img/univergblue.png" style="width:100px">
                 </div>
             </div>
 
-
             <div class="row mt-lg-4">
-                <div class="col-md-12 p-0">
-                    <h2 class="heading">Why <span class="text-highlight">Blueciate</span>?</h2>
+                <div class="col-md-12 px-4">
+                    <h2 class="heading">Why Blueciate?</h2>
                 </div>
             </div>
 
             <div class="row bg-white p-2">
-                <h2><span class="text-highlight">100%</span> Confidence</h2>
+                <h2 class="heading">with 100% Confidence</h2>
                 <p class="paragraph pb-lg-5">Our values are constant and our processes are transparent, you wil always know what we are working on, and why</p>
                 <div class="col box px-3 py-4 mx-2">
                     <h2 class="heading-small">We keep your ideas <span class="text-highlight">safe</span></h2>
@@ -453,6 +485,14 @@
                     <p class="paragraph-small">By modernizing legacy systems and exploiting advances in technologies.</p>
                 </div>
             </div>
+
+
+
+                <div class="row mt-lg-4" style="background-color: #6dab3c;">
+                    <div class="col-md-12 p-0">
+                        <h2 class="heading" style="color: #fff; font-size: 72px; line-height: 75px; font-weight: normal;padding: 10px">Join Blueciate Future Digital Transformation Team to build, automate & deploy your applications and you completely focus on your business needs.</h2>
+                    </div>
+                </div>
             </form>
 
         </div>
