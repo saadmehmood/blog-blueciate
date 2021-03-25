@@ -261,22 +261,24 @@
 
                 </div>
             </div>
+            <form method="post" id="upload-image-form" enctype="multipart/form-data">
+                @csrf
             <div class="row mt-lg-4">
                 <div class="col-md-4 px-0">
 
-                    <input type="radio" class="btn-check" name="options" id="steps-ad" autocomplete="off">
+                    <input type="radio" class="btn-check" name="work_type" id="steps-ad" autocomplete="off" value="Application Development">
                     <label class="btn btn-steps" for="steps-ad">Application Development</label>
 {{--                    <h2 class="heading text-center">Application Development</h2>--}}
 
                 </div>
                 <div class="col-md-4 px-0">
-                    <input type="radio" class="btn-check" name="options" id="steps-ps" autocomplete="off">
+                    <input type="radio" class="btn-check" name="work_type" id="steps-ps" autocomplete="off" value="Production Suport">
                     <label class="btn btn-steps" for="steps-ps">Production Suport</label>
 {{--                    <h2 class="heading text-center">Production Suport</h2>--}}
 
                 </div>
                 <div class="col-md-4 px-0">
-                    <input type="radio" class="btn-check" name="options" id="steps-ns" autocomplete="off">
+                    <input type="radio" class="btn-check" name="work_type" id="steps-ns" autocomplete="off" value="Networking Support">
                     <label class="btn btn-steps" for="steps-ns">Networking Support</label>
 {{--                    <h2 class="heading text-center">Networking Support</h2>--}}
 
@@ -294,23 +296,18 @@
                 <div class="col-12 pr-0 bg-white pl-lg-2 py-lg-3">
                     <h2 class="heading">What can <span class="text-highlight font-size-36">remote team</span> do for you?</h2>
 
-                    <input type="checkbox" class="btn-check" name="options" id="option1" autocomplete="off">
-                    <label class="btn btn-secondary" for="option1">Web Development</label>
+                    <?php
+                    $options = ['Web Development', 'Mobile Development', 'Data Engineering', 'Software Integration', 'DevOps & Infrastructure', 'Machine Learning', 'Other Mission'];
+                    $count = 1;
+                    foreach ($options as $option){
+                    ?>
 
-                    <input type="checkbox" class="btn-check" name="options" id="option2" autocomplete="off">
-                    <label class="btn btn-secondary" for="option2">Mobile Development</label>
+                    <input type="checkbox" class="btn-check" name="options[]" id="option{{ $count }}" value="{{ $option }}" autocomplete="off">
+                    <label class="btn btn-secondary" for="option{{ $count }}">{{ $option }}</label>
 
-                    <input type="checkbox" class="btn-check" name="options" id="option3" autocomplete="off">
-                    <label class="btn btn-secondary" for="option3">Data Engineering</label>
-
-                    <input type="checkbox" class="btn-check" name="options" id="option4" autocomplete="off">
-                    <label class="btn btn-secondary" for="option4">Software Integration</label>
-                    <input type="checkbox" class="btn-check" name="options" id="option5" autocomplete="off">
-                    <label class="btn btn-secondary" for="option5">DevOps & Infrastructure</label>
-                    <input type="checkbox" class="btn-check" name="options" id="option6" autocomplete="off">
-                    <label class="btn btn-secondary" for="option6">Machine Learning</label>
-                    <input type="checkbox" class="btn-check" name="options" id="option7" autocomplete="off">
-                    <label class="btn btn-secondary" for="option7">Other Mission</label>
+                    <?php
+                    $count++;
+                    } ?>
                 </div>
             </div>
 
@@ -330,7 +327,7 @@
                     foreach ($skills as $skill){
                         ?>
 
-                    <input type="checkbox" class="btn-check" name="skills" id="skill{{ $count }}" autocomplete="off">
+                    <input type="checkbox" class="btn-check" name="skills[]" id="skill{{ $count }}" value="{{ $skill }}" autocomplete="off">
                     <label class="btn btn-secondary" for="skill{{ $count }}">{{ $skill }}</label>
 
                     <?php
@@ -356,7 +353,7 @@
                         foreach ($teamSize as $team){
                             ?>
                         <div class="col px-0">
-                    <input type="radio" class="btn-check" name="options" id="team{{ $count }}" autocomplete="off">
+                    <input type="radio" class="btn-check" name="team_size" id="team{{ $count }}" value="{{ $team }}" autocomplete="off">
                     <label class="btn btn-team-size" for="team{{ $count }}">{{ $team }}</label>
                         </div>
 
@@ -372,21 +369,21 @@
                     <img src="/blueciate/img/colleagues-giving-fist-bump.jpg" alt="Blueciate Team">
                 </div>
 
-                <div class="col-md-6 px-3" style="display: none;">
+                <div class="col-md-6 px-3" id="user_form_data">
                     <h2 class="heading">Tell us about <span class="text-highlight">Yourself</span></h2>
                     <div class="row">
                         <div class="col">
                             <div class="mb-2">
                                 <label for="full_name" class="form-label">Full name</label>
-                                <input type="text" name="full_name" class="form-control" id="full_name" placeholder="Full name">
+                                <input type="text" name="full_name" class="form-control" id="full_name" placeholder="Full name" required>
                             </div>
                             <div class="mb-2">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com">
+                                <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com" required>
                             </div>
                             <div class="mb-2">
                                 <label for="Phone" class="form-label">Phone</label>
-                                <input type="text" class="form-control" id="Phone" placeholder="Phone">
+                                <input type="text" name="phone" class="form-control" id="Phone" placeholder="Phone" required>
                             </div>
                         </div>
                         <div class="col">
@@ -400,13 +397,16 @@
                             </div>
                         </div>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="btn btn-primary" type="button">Send</button>
+                            <button class="btn btn-primary" id="submit-button" type="submit">Send</button>
+                            <div class="spinner-grow text-primary mx-3" style="display: none" id="loader" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
                         </div>
                     </div>
 
                 </div>
 
-                <div class="col-md-6 px-3">
+                <div class="col-md-6 px-3" id="thank_box" style="display: none;">
                     <h2 class="heading mt-lg-5">Thank you for your business we will get back to you shortly.</h2>
                 </div>
             </div>
@@ -453,6 +453,7 @@
                     <p class="paragraph-small">By modernizing legacy systems and exploiting advances in technologies.</p>
                 </div>
             </div>
+            </form>
 
         </div>
         @include('layouts.blueciate.contact')
@@ -483,6 +484,10 @@
         $('#upload-image-form').submit(function(e) {
             e.preventDefault();
             let formData = new FormData(this);
+
+            $('#submit-button').hide();
+            $('#loader').show();
+
             $('#first_name_error').text('');
             $('#last_name_error').text('');
             $('#email_error').text('');
@@ -491,18 +496,20 @@
 
             $.ajax({
                 type:'POST',
-                url: `/upload-images`,
+                url: '/remote-work-mail',
                 data: formData,
                 contentType: false,
                 processData: false,
                 success: (response) => {
                     if (response) {
-                        this.reset();
-                        $('#application_form').hide();
-                        $('#thanks_message').show();
+                        // this.reset();
+                        $('#user_form_data').hide();
+                        $('#thank_box').show();
                     }
                 },
                 error: function(response){
+                    $('#submit-button').show();
+                    $('#loader').hide();
                     console.log(response.errors);
                     $('#first_name_error').text(response.responseJSON.errors.first_name);
                     $('#last_name_error').text(response.responseJSON.errors.last_name);

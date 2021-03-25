@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Mail\BpmsReady;
 use App\Mail\BpmsWebinar;
 use App\Mail\ContactUs;
+use App\Mail\RemoteWork;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 use Mail;
@@ -237,5 +238,10 @@ class BlueciateController extends Controller
             'title' => $title,
             'metaDescription' => $metaDescription
         ]);
+    }
+    public function remoteWorkMail(Request $request): bool
+    {
+        Mail::to('info@blueciate.com')->send(new RemoteWork($request->all()));
+        return true;
     }
 }
