@@ -37,7 +37,7 @@
                 It's all about
             </h5>
             <h1 class="sec-row-title " style="color: #03a9f4;">
-                Relationship Management, Low-Code With Hyper-Automation<br> To Unify Your Data in Digital Platform.
+                Connect, Engage, Communicate, Collaborate & Orchestrate <br>Relationship Management, Low-Code With Hyper-Automation<br> To Unify Your Data in Digital Platform.
             </h1>
             <h5>
                 That’s why I BlueCiate..
@@ -216,7 +216,7 @@
                 <div class="icon-box">
                   <span class="icon flaticon-statistics-1"></span>
                 </div>
-                <h1>Internet Services Guide</h1>
+                <h1>Remote Work</h1>
               </div>
             </div>
 
@@ -226,8 +226,8 @@
                   <div class="icon-box">
                     <span class="icon flaticon-statistics-1"></span>
                   </div>
-                  <h1><a href="{{ route('internet-of-things') }}">Internet Services Guide</a></h1>
-                  <a class="read-more" href="{{ route('internet-of-things') }}">See More<span
+                  <h1><a href="{{ route('remote-work') }}">Remote Work</a></h1>
+                  <a class="read-more" href="{{ route('remote-work') }}">See More<span
                       class="fa fa-angle-double-right"></span></a>
                 </div>
               </div>

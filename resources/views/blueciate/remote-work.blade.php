@@ -1,4 +1,5 @@
 ﻿@push('styles')
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         body {
 
@@ -17,13 +18,18 @@
         }
 
         h2.banner-text {
-            font-size: 72px;
+            font-size: 68px;
             line-height: 75px
+        }
+        h2.banner-text .text-highlight {
+            font-size: 90px;
+            font-weight: 900;
         }
 
         .box-shadow-bottom {
             -webkit-box-shadow: 5px 10px 13px -14px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
             box-shadow: 5px 10px 13px -14px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+            border: #0070c0 solid;
         }
 
         .font-size-48 {
@@ -32,6 +38,14 @@
 
         .font-size-36 {
             font-size: 36px;
+        }
+
+        .font-size-28 {
+            font-size: 28px;
+        }
+
+        .font-size-24 {
+            font-size: 24px;
         }
 
         .heading-top {
@@ -46,6 +60,17 @@
 
         p.paragraph {
             color: #707577;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 25px;
+            font-style: normal;
+            font-weight: 300;
+            width: 100%;
+            font-size: 18px;
+            margin-bottom: 0px;
+        }
+
+        p.banner-paragraph {
+            color: #000;
             font-family: 'Open Sans', sans-serif;
             line-height: 25px;
             font-style: normal;
@@ -280,6 +305,9 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        .steps {
+            font-size: 18px;
+        }
     </style>
 @endpush
 @extends('layouts.blueciate-3')
@@ -291,50 +319,45 @@
     <div class="container-fluid top-banner">
         <div class="row" style="min-height: 400px">
             <div class="col">
-                <h2 class="heading">helping companies to be ready for your Digital Transformation step & what is next
-                    …..</h2>
+                <p class="banner-paragraph">helping companies to be ready for your Digital Transformation step & what is next
+                    …..</p>
                 <br>
                 <br>
                 <br>
-                <h2 class="heading banner-text">Blueciate teamwork <br><span
+                <h2 class="heading banner-text"><b>Blueciate</b> teamwork <br><span
                         class="text-highlight">#RemoteWork</span><br></h2>
                 <h2 class="heading ">(your next step towards digital transformation…)</h2>
-                <p class="paragraph">
-                    (software engineering digital transformation platform team, to connect,collaberate & Orchestrate
+                <p class="banner-paragraph">
+                    (software engineering digital transformation platform team, to Connect, Engage, Communicate, Collaborate & Orchestrate
                     your business).</p>
             </div>
         </div>
     </div>
 
     <div class="container">
-        <div class="row mt-lg-4">
-            <div class="col-md-12 px-0">
-                <h2 class="font-size-48 heading text-center pt-lg-5">Build Remote Engineering Team</h2>
-                <br>
-                <div class="text-center">
-                    <a href="#" class="btn-blue">Get Started</a>
-                </div>
-
-            </div>
-        </div>
-        {{--            <div class="row mt-lg-4">--}}
-        {{--                <div class="col-md-12 px-0">--}}
-        {{--                    <h2 class="font-size-48 heading text-center">How? <br><span style="color: grey; font-size: 30px">in</span> <span class="text-highlight font-size-36"> <br>4 easy steps.</span></h2>--}}
-
-        {{--                </div>--}}
-        {{--            </div>--}}
-        <br>
-        <br>
-        <br>
         <form method="post" id="upload-image-form" enctype="multipart/form-data">
+            <div class="row mt-lg-4">
+                <div class="col-md-12 px-0">
+                    <h2 class="font-size-48 heading text-center pt-3 pt-lg-5">Let's build your remote engineering team in 4 easy steps</h2>
+
+                </div>
+            </div>
+            {{--            <div class="row mt-lg-4">--}}
+            {{--                <div class="col-md-12 px-0">--}}
+            {{--                    <h2 class="font-size-48 heading text-center">How? <br><span style="color: grey; font-size: 30px">in</span> <span class="text-highlight font-size-36"> <br>4 easy steps.</span></h2>--}}
+
+            {{--                </div>--}}
+            {{--            </div>--}}
+            <br>
+            <br>
             @csrf
-            <div class="row mt-4 mt-lg-4">
+            <div class="row mt-4 mt-lg-4" data-aos="fade-up" data-aos-duration="1500">
                 <div class="col-12">
-                    <h2 class="heading"><span style="font-size: 24px">Step 1:</span> I want</h2>
+                    <h2 class="heading text-center"><span class="steps">Step 1:</span> I want</h2>
                 </div>
                 <br>
                 <br>
-                <div class="col-12 pr-0 bg-white pl-lg-2 py-lg-3">
+                <div class="col-12 pr-0 bg-white pl-lg-2 py-lg-3 text-center">
 
                     <input type="radio" class="btn-check" name="work_type" id="steps-ad" autocomplete="off"
                            value="Application Development">
@@ -342,11 +365,9 @@
                     <input type="radio" class="btn-check" name="work_type" id="steps-ps" autocomplete="off"
                            value="Production Suport">
                     <label class="btn btn-steps" for="steps-ps">Production Suport</label>
-                    {{--                    <h2 class="heading text-center">Production Suport</h2>--}}
                     <input type="radio" class="btn-check" name="work_type" id="steps-ns" autocomplete="off"
                            value="Networking Support">
                     <label class="btn btn-steps" for="steps-ns">Networking Support</label>
-                    {{--                    <h2 class="heading text-center">Networking Support</h2>--}}
 
                 </div>
             </div>
@@ -358,25 +379,24 @@
             {{--                </div>--}}
             {{--            </div>--}}
 
-            <div class="row mt-4 mt-lg-4">
+            <div class="row mt-4 mt-lg-4" data-aos="fade-up" data-aos-duration="1500">
                 <div class="col-12 pr-0 bg-white pl-lg-2 py-lg-3">
-                    <h2 class="heading mb-0"><span style="font-size: 24px">Step 2:</span> Build your Dream Team to define your scope of
-                        work.</h2>
-                    <p class="paragraph text-left">(select your Blueciate Remote Development Team.)</p>
+                    <h2 class="heading mb-0" style="line-height: 24px"><span class="steps">Step 2:</span> Define Scope of Work?</h2>
+                    <p class="paragraph text-left mb-3" style="margin-left: 68px;font-size: 14px;">(select your Blueciate Remote Development Team.)</p>
 
                     <?php
                     $options = [
-                        'Web Development',
-                        'Mobile Development',
-                        'Data Engineering',
-                        'Software Integration',
-                        'DevOps & Infrastructure',
-                        'Machine Learning',
-                        'Other Mission',
                         'Low code',
                         'Artifictal Intellegence(AI)',
+                        'Software Integration',
+                        'Data Engineering',
+                        'DevOps & Infrastructure',
+                        'Machine Learning',
+                        'Mobile Development',
+                        'Web Development',
                         'RPA Automation',
-                        'iBPMS'
+                        'iBPMS',
+                        'Need Help'
                     ];
                     $count = 1;
                     foreach ($options as $option){
@@ -398,33 +418,34 @@
             {{--                </div>--}}
             {{--            </div>--}}
 
-            <div class="row mt-4 mt-lg-4">
+            <div class="row mt-4 mt-lg-4" data-aos="fade-up" data-aos-duration="1500">
                 <div class="col-12 pr-0 bg-white pl-lg-2 py-lg-3">
-                    <h2 class="heading mb-0"><span style="font-size: 24px">Step 3:</span> Select the right skill set & Platform?</h2>
-                    <p class="paragraph text-left">(select the right skillset) </p>
+                    <h2 class="heading mb-0" style="line-height: 24px"><span  class="steps">Step 3:</span> Select platform & skill-set?</h2>
+                    <p class="paragraph text-left mb-3" style="margin-left: 68px;font-size: 14px;">(select the right skill-set) </p>
 
                     <?php
                     $skills = [
-                        'Javascript',
-                        'React Js',
-                        'Node Js',
-                        'Html/Css',
-                        'Php',
-                        'Python',
                         'Ruby On Rails',
                         'React Native',
-                        'Angular',
+                        'Objective C',
                         'Angular Js',
+                        'Javascript',
+                        'Typescript',
+                        'Bootstrap',
+                        'React Js',
+                        'Html/Css',
+                        'Node Js',
+                        'Android',
+                        'Angular',
+                        'My Sql',
+                        'Python',
                         'Swift',
                         'AWS',
+                        'Php',
                         'C#',
-                        'Android',
-                        'Bootstrap',
-                        'Objective C',
-                        'Typescript',
-                        'My Sql',
                         'Sql',
-                        'Java'
+                        'Java',
+                        'Need Help'
                     ];
                     $count = 1;
                     foreach ($skills as $skill){
@@ -446,33 +467,35 @@
             {{--                </div>--}}
             {{--            </div>--}}
 
-            <div class="row mt-4 mt-lg-4">
+            <div class="row mt-4 mt-lg-4" data-aos="fade-up" data-aos-duration="1500">
                 <div class="col-12 pr-0 bg-white pl-lg-2 py-lg-3">
-                    <h2 class="heading mb-0"><span style="font-size: 24px">Step 4:</span> Select your Right Team Size?</h2>
-                    <p class="paragraph text-left">(select the team size required 1-5)</p>
+                    <h2 class="heading mb-0" style="line-height: 24px"><span  class="steps">Step 4:</span> Select team size?</h2>
+                    <p class="paragraph text-left mb-3" style="margin-left: 68px;font-size: 14px;">(Team size required 1-5)</p>
 
                     <div class="row px-2">
+                        <div class="col-12 pr-0 bg-white pl-lg-2 py-lg-3">
                         <?php
-                        $teamSize = [2, 3, 4, 5, 6, 7, 'Not sure'];
+                        $teamSize = ['One (1)','Two (2)', 'Three (3)', 'Four (4)', 'Five (5)', '5+', 'Not sure'];
                         $count = 1;
                         foreach ($teamSize as $team){
                         ?>
-                        <div class="col px-0">
+{{--                        <div class="col px-0">--}}
                             <input type="radio" class="btn-check" name="team_size" id="team{{ $count }}"
                                    value="{{ $team }}" autocomplete="off">
-                            <label class="btn btn-team-size" for="team{{ $count }}">{{ $team }}</label>
-                        </div>
+                            <label class="btn btn-secondary" for="team{{ $count }}">{{ $team }}</label>
+{{--                        </div>--}}
 
                         <?php
                         $count++;
                         } ?>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="row mt-4 mt-lg-4 bg-white box-shadow-bottom">
 
-                <div class="col-md-12 px-3" id="user_form_data">
+                <div class="col-md-12 px-3">
                     <h2 class="heading">Tell us about <span class="text-highlight">Yourself</span></h2>
                     <div class="row">
                         <div class="col-md-6 col-sm-12">
@@ -501,7 +524,7 @@
                             <div class="mb-2">
                                 <label for="message" class="form-label">Your Message</label>
                                 <textarea class="form-control" id="message" name="message" rows="4"
-                                          style="height: 272px"></textarea>
+                                          style="height: 272px" placeholder="Type your message"></textarea>
                             </div>
                         </div>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
@@ -513,26 +536,30 @@
                     </div>
 
                 </div>
-
-                <div class="col-md-6 col-sm-12 px-3" id="thank_box" style="display: none;">
-                    <h2 class="heading mt-lg-5">Thank you for your business we will get back to you shortly.</h2>
-                </div>
             </div>
         </form>
 
+        <div class="row mt-4 mt-lg-4" data-aos="fade-up" data-aos-duration="1500" id="thank_box" style="display: none;">
+            <div class="col-md-12 col-sm-12 px-3">
+                <h2 class="font-size-48 heading mt-lg-5 text-center"><span class="text-highlight">Thank you for your business we will get back to you shortly.</span></h2>
+            </div>
+        </div>
+
 
             <div class="row mt-lg-4 mt-4">
+                <div class="col-md-12 col-sm-12 pb-3">
+                    <h2 class="heading">In Collaboration with technology partners:</h2>
+                </div>
                 <div class="col-md-2 col-sm-12">
                     <img src="/blueciate/img/univergblue.png" style="width:132px">
                 </div>
-                <div class="col-md-10 col-sm-12 p-0">
+                <div class="col-md-10 col-sm-12">
                     <h2 class="heading-small">Connect, Collaborate, Orchestrate</h2>
                     <p class="paragraph">
+                        <span style="color: #0070c0;">NEC UNIVERGE BLUE CONNECT, MEET, SHARE, ENGAGE</span> an easy-to-use cloud-based communications
+                        platform that helps employees to be more productive and collaborative.
                         Take your business to the next level with
                         fully integrated unified communications.
-                        <br>
-                        UNIVERGE BLUE CONNECT is an easy-to-use cloud-based communications
-                        platform that helps employees to be more productive and collaborative.
                         It includes a full-featured phone system combined with chat, web/video
                         conferencing, and file sync, share, and backup capabilities.
                     </p>
@@ -542,24 +569,25 @@
                 <div class="col-md-2 col-sm-12">
                     <img src="/blueciate/img/auralogo.png" style="width:132px">
                 </div>
-                <div class="col-md-10 col-sm-12 p-0">
+                <div class="col-md-10 col-sm-12">
                     <h2 class="heading-small">Remote Work,Home, office, anywhere</h2>
                     <p class="paragraph">
-                        AuraQuantic helps you digitize and orchestrate all types of business processes and rapidly create end-to-end business applications. Complete low-code platform for building the enterprise solutions that drive Digital Transformation.
+                        <span style="color: #0070c0;">AuraQuantic</span> helps you digitize and orchestrate all types of business processes and rapidly create end-to-end business applications. Complete low-code platform for building the enterprise solutions that drive Digital Transformation.
                     </p>
                 </div>
             </div>
 
             <div class="row mt-lg-4">
-                <div class="col-md-12">
+                <div class="col-md-12 py-3 px-3">
                     <h2 class="heading">Why Blueciate?</h2>
                 </div>
             </div>
 
             <div class="row bg-white">
-                <h2 class="heading">with 100% Confidence</h2>
+                <h2 class="heading-small">100% Confidence:</h2>
                 <p class="paragraph pb-lg-5">Our values are constant and our processes are transparent, you wil always
-                    know what we are working on, and why</p>
+                    know what we are working on, and why that’s why I BlueCiate..
+                </p>
             </div>
 
         <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3 bg-white">
@@ -580,20 +608,19 @@
                 <div class="col">
                     <div class=" box px-3 py-4">
                     <h2 class="heading-small">We're <span class="text-highlight">easy</span> to work with</h2>
-                    <p class="paragraph-small">Regular skype meetings, demo sessions and feedback sessions ensure we
-                        meet your demand.</p>
+                    <p class="paragraph-small">UNIVERGE BLUE® Desktop App brings essential collaboration tools together, making teamwork easier than ever.</p>
                     </div>
                 </div>
                 <div class="col">
                     <div class=" box px-3 py-4">
                     <h2 class="heading-small"><span class="text-highlight">Augment</span> your R&D team</h2>
-                    <p class="paragraph-small">We access to dedicated pool of 150+ software and hardware engineers.</p>
+                    <p class="paragraph-small">We access to dedicated pool of 100+ software and hardware engineers.Fully integrated unified communications and collaboration...</p>
                     </div>
                 </div>
                 <div class="col">
                     <div class=" box px-3 py-4">
                     <h2 class="heading-small">Build an <span class="text-highlight">idea</span> from scratch</h2>
-                    <p class="paragraph-small">Guided by top business consultants and senior solution architects.</p>
+                    <p class="paragraph-small">With simple cloud app delivers a seamless, unified experience while reducing complexity and costs.</p>
                     </div>
                 </div>
                 <div class="col">
@@ -645,11 +672,9 @@
 
 
             <div class="row justify-content-center mt-lg-4" style="background-color: #6dab3c;">
-                <div class="col-md-6 p-5">
+                <div class="col-md-7 p-5">
                     <h2 class="heading text-center"
-                        style="color: #fff; font-size: 24px; line-height: 24px; font-weight: normal;padding: 10px">Join
-                        <strong>Blueciate</strong> Future Digital Transformation Team to build, automate & deploy your applications and
-                        you completely focus on your business needs.</h2>
+                        style="color: #fff; font-size: 24px; line-height: 24px; font-weight: normal;padding: 10px"><span style="font-size: 72px;">Blueciate</span><br> <span style="font-size: 36px;">digital transformation platform & team</span><br><br> helps you to build, automate, deploy your applications & you completely focus on your business.</h2>
                 </div>
             </div>
 
@@ -672,8 +697,10 @@
     <!--Latest compiled JavaScript-->
     <script src="/blueciate/index_files/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
+        AOS.init();
         $.ajaxSetup({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -702,7 +729,7 @@
                 success: (response) => {
                     if (response) {
                         // this.reset();
-                        $('#user_form_data').hide();
+                        $('#upload-image-form').hide();
                         $('#thank_box').show();
                     }
                 },
