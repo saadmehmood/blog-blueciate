@@ -4,7 +4,52 @@
         body {
 
             font-family: 'Open Sans', sans-serif;
-            /*background-color: #f5f5f5;*/
+            background-color: #1569E0;
+        }
+        .modal {
+            z-index: 1051;
+        }
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0.75;
+            color: transparent;
+            cursor: pointer;
+        }
+        .modal-lg {
+            max-width: 60%;
+        }
+        .video-iframe {
+            width: 100%;
+            height: 600px;
+        }
+        .carousel-item {
+            text-align: center;
+        }
+        .modal-content {
+            background-color: transparent;
+            border: 0px;
+        }
+        .carousel-control-prev, .carousel-control-next {
+            width: 5%;
+        }
+        .modal-header {
+            border: 0px;
+        }
+        img {
+             width: 100%;
+             max-width: 100%;
+             height: auto;
+             vertical-align: middle;
+         }
+        #content #main-nav {
+            margin-bottom: 0px;
+        }
+        .container-fluid, .container {
+            background-color: white;
         }
 
         article#services.hh-services section {
@@ -96,6 +141,7 @@
         .box {
             border: 1px solid;
             border-color: #0e0b04;
+            height: 100%;
         }
 
         .mt-150 {
@@ -125,6 +171,12 @@
             background: #00b050;
         }
 
+        .bottom-blueciate-font {
+            font-size: 72px;
+        }
+        .bottom-text-font {
+            font-size: 36px;
+        }
 
         @media screen and (max-width: 992px) {
             .container {
@@ -199,8 +251,13 @@
             }
 
             h2.banner-text {
+                font-size: 2rem;
+                line-height: 2rem;
+            }
+            h2.banner-text .text-highlight {
                 font-size: 36px;
-                line-height: 36px
+                line-height: 36px;
+                font-weight: 600;
             }
 
             p.paragraph {
@@ -240,6 +297,12 @@
 
             .mt-150, .mt-100 {
                 margin-top: 0px;
+            }
+            .bottom-blueciate-font {
+                font-size: 36px;
+            }
+            .bottom-text-font {
+                font-size: 24px;
             }
         }
 
@@ -336,7 +399,7 @@
 
     <div class="container">
         <form method="post" id="upload-image-form" enctype="multipart/form-data">
-            <div class="row mt-lg-4">
+            <div class="row">
                 <div class="col-md-12 px-0">
                     <h2 class="font-size-48 heading text-center pt-3 pt-lg-5">Let's build your remote engineering team in 4 easy steps</h2>
 
@@ -538,10 +601,37 @@
                 </div>
             </div>
         </form>
+        <div id="thank_box" style="display: none;">
+            <div class="row" data-aos="fade-up" data-aos-duration="1500">
+                <div class="col-md-12 col-sm-12 px-3">
+                    <h2 class="font-size-48 heading mt-lg-5 text-center"><span class="text-highlight">Thank you for your business.<br> we will get back to you shortly.</span></h2>
+                </div>
+            </div>
 
-        <div class="row mt-4 mt-lg-4" data-aos="fade-up" data-aos-duration="1500" id="thank_box" style="display: none;">
-            <div class="col-md-12 col-sm-12 px-3">
-                <h2 class="font-size-48 heading mt-lg-5 text-center"><span class="text-highlight">Thank you for your business we will get back to you shortly.</span></h2>
+            <div class="row py-5" data-aos="fade-up" data-aos-duration="1500">
+                <div class="col-md-6 px-0" style="position: relative; margin: 0 auto;">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img itemprop="thumbnailUrl" src="/blueciate/img/auraportal-video-thumb.png" alt="Process Automation in 3 Steps thumbnail" role="button" aria-label="Process Automation in 3 Steps video">
+                        </div>
+                        <div class="video-overlay">
+                            <img src="/blueciate/img/videoOverlay.png" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/muUopRjuKgk">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row py-5" data-aos="fade-up" data-aos-duration="1500">
+                <div class="col-md-6 px-0" style="position: relative; margin: 0 auto;">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img itemprop="thumbnailUrl" src="/blueciate/img/blue-connect-desktop.png" alt="Process Automation in 3 Steps thumbnail" role="button" aria-label="Process Automation in 3 Steps video">
+                        </div>
+                        <div class="video-overlay">
+                            <img src="/blueciate/img/videoOverlay.png" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/bVuD0mDhho0">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -562,6 +652,7 @@
                         fully integrated unified communications.
                         It includes a full-featured phone system combined with chat, web/video
                         conferencing, and file sync, share, and backup capabilities.
+                        <a href="{{ route('univerge-blue') }}">more...</a>
                     </p>
                 </div>
             </div>
@@ -572,7 +663,9 @@
                 <div class="col-md-10 col-sm-12">
                     <h2 class="heading-small">Remote Work,Home, office, anywhere</h2>
                     <p class="paragraph">
-                        <span style="color: #0070c0;">AuraQuantic</span> helps you digitize and orchestrate all types of business processes and rapidly create end-to-end business applications. Complete low-code platform for building the enterprise solutions that drive Digital Transformation.
+                        <span style="color: #0070c0;">AuraQuantic</span> helps you digitize and orchestrate all types of business processes and rapidly create
+                        end-to-end business applications. Complete low-code platform for building the enterprise solutions that drive Digital Transformation.
+                        <a href="{{ route('bpm') }}">more...</a>
                     </p>
                 </div>
             </div>
@@ -584,13 +677,13 @@
             </div>
 
             <div class="row bg-white">
-                <h2 class="heading-small">100% Confidence:</h2>
+                <h2 class="heading-small"><span class="text-highlight">100% Confidence:</span></h2>
                 <p class="paragraph pb-lg-5">Our values are constant and our processes are transparent, you wil always
                     know what we are working on, and why that’s why I BlueCiate..
                 </p>
             </div>
 
-        <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3 bg-white">
+        <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3 bg-white pb-4">
                 <div class="col">
                     <div class=" box px-3 py-4">
                     <h2 class="heading-small">We keep your ideas <span class="text-highlight">safe</span></h2>
@@ -639,7 +732,7 @@
                 <div class="col">
                     <div class=" box px-3 py-4">
                     <h2 class="heading-small">Low-code Application Platform <span class="text-highlight">(LCAP)</span></h2>
-                    <p class="paragraph-small">Create zero-code automations for your business operations. low-code platform for building the enterprise solutions that drive Digital Transformation to minimize the chances of human error and focus on the tasks that make a real impact</p>
+                    <p class="paragraph-small">Create zero-code automations for your business operations. low-code platform for building the enterprise solutions.</p>
                     </div>
                 </div>
                 <div class="col">
@@ -669,17 +762,30 @@
             </div>
     </div>
     <div class="container-fluid">
-
-
-            <div class="row justify-content-center mt-lg-4" style="background-color: #6dab3c;">
+            <div class="row justify-content-center" style="background-color: #6dab3c;">
                 <div class="col-md-7 p-5">
                     <h2 class="heading text-center"
-                        style="color: #fff; font-size: 24px; line-height: 24px; font-weight: normal;padding: 10px"><span style="font-size: 72px;">Blueciate</span><br> <span style="font-size: 36px;">digital transformation platform & team</span><br><br> helps you to build, automate, deploy your applications & you completely focus on your business.</h2>
+                        style="color: #fff; font-size: 24px; line-height: 24px; font-weight: normal;padding: 10px"><span class="bottom-blueciate-font">Blueciate</span><br> <span class="bottom-text-font">digital transformation platform & team</span><br><br> helps you to build, automate, deploy your applications & you completely focus on your business.</h2>
                 </div>
             </div>
 
     </div>
     @include('layouts.blueciate.contact')
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <div>
+                        <iframe class="video-iframe" src="" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
 @push('scripts')
     <script src="/blueciate/index_files/jquery-3.3.1.min.js"
@@ -744,6 +850,26 @@
                     $('#resume_error').text(response.responseJSON.errors.resume);
                 }
             });
+        });
+        //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
+        function autoPlayYouTubeModal(){
+            var trigger = $("body").find('[data-toggle="modal"]');
+            trigger.click(function() {
+                var theModal = $(this).data( "target" ),
+                    videoSRC = $(this).attr( "data-theVideo" ),
+                    videoSRCauto = videoSRC+"?autoplay=1" ;
+                $(theModal+' iframe').attr('src', videoSRCauto);
+                $(theModal+' button.close').click(function () {
+                    $(theModal+' iframe').attr('src', videoSRC);
+                });
+            });
+        }
+
+        $(document).ready(function(){
+            autoPlayYouTubeModal();
+            // $('#webinar').modal();
+            // if (Cookies.get('webinar-feb') !== 'submitted') {
+            // }
         });
 
     </script>
