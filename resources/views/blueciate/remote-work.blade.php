@@ -401,7 +401,7 @@
         <form method="post" id="upload-image-form" enctype="multipart/form-data">
             <div class="row">
                 <div class="col-md-12 px-0">
-                    <h2 class="font-size-48 heading text-center pt-3 pt-lg-5">Let's build your remote engineering team in 4 easy steps</h2>
+                    <h2 class="font-size-48 heading text-center pt-3 pt-lg-5"  style="color: black;">Let's build your remote engineering team in 4 easy steps</h2>
 
                 </div>
             </div>
@@ -638,7 +638,7 @@
 
             <div class="row mt-lg-4 mt-4">
                 <div class="col-md-12 col-sm-12 pb-3">
-                    <h2 class="heading">In Collaboration with technology partners:</h2>
+                    <h2 class="heading" style="font-size: 26px; color: black;">In Collaboration with technology partners:</h2>
                 </div>
                 <div class="col-md-2 col-sm-12">
                     <img src="/blueciate/img/univergblue.png" style="width:132px">

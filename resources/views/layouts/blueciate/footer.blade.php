@@ -112,3 +112,31 @@
         </div>
     </div>
 </div>
+<!--COPYRIGHT -->
+<div class="modal fade" id="remoteWork" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row col-md-12">
+                    <div class="col-sm-12 col-md-7 pt-lg-5" style="color: white">
+                        <p style="color: white">Blueciate teamwork...</p>
+                        <h1>Transform 2021 <br>#RemoteWork</h1>
+                        <p style="font-size: 18px;color: white">Build your remote Engineering team in 4 easy steps to maximize your resources and dramatically improve your business results.</p>
+                        <p style="color: white">
+                            Break through the IT challenges of 2021 with new ideas, exciting training, bold inspiration and you completely focus on what matters most to your business.
+                        </p>
+                        <a href="{{ route('remote-work') }}" type="button" class="btn btn-primary">Remote Work</a>
+                    </div>
+                    <div class="col-md-5 text-right">
+                        <img src="/blueciate/img/remote-work-popup.jpeg" alt="" style="width: 85%" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

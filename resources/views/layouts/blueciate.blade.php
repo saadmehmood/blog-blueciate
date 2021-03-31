@@ -50,7 +50,6 @@
     }
     .webinar-img {
         min-height: 200px;
-        background-image: url("/blueciate/img/webinar-bg.png");
         overflow: hidden;
         background-size: cover;
         background-position: center;
@@ -58,8 +57,17 @@
     .webinar-content p {
         color: white;
     }
+    .webinar-bg-image {
+        background-image: url("/blueciate/img/webinar-bg.png");
+    }
+    .remote-work-bg-image {
+        background-image: url("/blueciate/img/remote-work-popup.jpeg");
+    }
 
     @media screen and (max-width: 992px) {
+        .modal-lg {
+            max-width: 100%;
+        }
         .webinar-img{
             display: none;
         }
@@ -69,6 +77,9 @@
     }
 
     @media screen and (max-width: 600px) {
+        .modal-lg {
+            max-width: 100%;
+        }
         .webinar-img{
             display: none;
         }
@@ -188,7 +199,7 @@
                 scaleBannerVideoSize('.video-container .filter');
                 scaleBannerVideoSize('.video-container video');
             });
-            // $('#webinar').modal();
+            $('#remoteWork').modal();
             // if (Cookies.get('webinar-feb') !== 'submitted') {
             // }
         });

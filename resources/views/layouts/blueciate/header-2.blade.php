@@ -21,19 +21,19 @@
             </a>
             <nav class="site-nav" style="font-size:15px;">
                 <ul>
-                    <li><a href="/">Home</a></li>
+                    <li><a href="{{route('home')}}">Home</a></li>
                     <li><a href="javascript:void(0)">services</a>
                         <ul class="sub-links">
-                            <li><a href="/Services/Website-development">Analytics</a></li>
-                            <li><a href="application-integration">Application Integration</a></li>
-                            <li><a href="cloud-apps-api">Cloud & Digital</a></li>
-                            <li><a href="internet-of-things">Internet of Things (IoT)</a></li>
-                            <li><a href="small-business">Small and Mid Size Business</a></li>
-                            <li><a href="/Services/Staffing">Resource Management</a></li>
+                            <li><a href="{{ route('analytics') }}">Analytics</a></li>
+                            <li><a href="{{ route('application-integration') }}">Application Integration</a></li>
+                            <li><a href="{{ route('cloud') }}">Cloud & Digital</a></li>
+                            <li><a href="{{ route('internet-of-things') }}">Internet of Things (IoT)</a></li>
+                            <li><a href="{{ route('small-business') }}">Small and Mid Size Business</a></li>
+                            <li><a href="{{ route('remote-work') }}">Remote Work</a></li>
                         </ul>
 
                     </li>
-                    <li><a href="/products">Products</a></li>
+                    <li><a href="{{ route('products') }}">Products</a></li>
                 </ul>
 
             </nav>
