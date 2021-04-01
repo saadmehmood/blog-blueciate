@@ -1,7 +1,6 @@
 
 
 
-<br/>
 <article id="contact--details" class="block">
     <div class="container">
         <section>

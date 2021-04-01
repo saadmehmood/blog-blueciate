@@ -69,6 +69,9 @@
         .mt-100 {
             margin-top: 100px;
         }
+        #contact--details {
+            margin-top: 20px;
+        }
     </style>
     <style>
         .modal-content {

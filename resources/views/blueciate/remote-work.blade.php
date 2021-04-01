@@ -4,8 +4,13 @@
         body {
 
             font-family: 'Open Sans', sans-serif;
-            background-color: #1569E0;
+            background: rgb(21,105,224);
+            background: -moz-linear-gradient(90deg, rgba(21,105,224,1) 0%, rgba(152,255,191,1) 100%);
+            background: -webkit-linear-gradient(90deg, rgba(21,105,224,1) 0%, rgba(152,255,191,1) 100%);
+            background: linear-gradient(90deg, rgba(21,105,224,1) 0%, rgba(152,255,191,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1569e0",endColorstr="#98ffbf",GradientType=1);
         }
+        .block {margin-bottom: 0}
         .modal {
             z-index: 1051;
         }
@@ -445,7 +450,7 @@
             <div class="row mt-4 mt-lg-4" data-aos="fade-up" data-aos-duration="1500">
                 <div class="col-12 pr-0 bg-white pl-lg-2 py-lg-3">
                     <h2 class="heading mb-0" style="line-height: 24px"><span class="steps">Step 2:</span> Define Scope of Work?</h2>
-                    <p class="paragraph text-left mb-3" style="margin-left: 68px;font-size: 14px;">(select your Blueciate Remote Development Team.)</p>
+                    <p class="paragraph text-left mb-3" style="margin-left: 68px;font-size: 15px;">(select your Blueciate Remote Development Team.)</p>
 
                     <?php
                     $options = [
@@ -484,7 +489,7 @@
             <div class="row mt-4 mt-lg-4" data-aos="fade-up" data-aos-duration="1500">
                 <div class="col-12 pr-0 bg-white pl-lg-2 py-lg-3">
                     <h2 class="heading mb-0" style="line-height: 24px"><span  class="steps">Step 3:</span> Select platform & skill-set?</h2>
-                    <p class="paragraph text-left mb-3" style="margin-left: 68px;font-size: 14px;">(select the right skill-set) </p>
+                    <p class="paragraph text-left mb-3" style="margin-left: 68px;font-size: 15px;">(select the right skill-set) </p>
 
                     <?php
                     $skills = [
@@ -533,7 +538,7 @@
             <div class="row mt-4 mt-lg-4" data-aos="fade-up" data-aos-duration="1500">
                 <div class="col-12 pr-0 bg-white pl-lg-2 py-lg-3">
                     <h2 class="heading mb-0" style="line-height: 24px"><span  class="steps">Step 4:</span> Select team size?</h2>
-                    <p class="paragraph text-left mb-3" style="margin-left: 68px;font-size: 14px;">(Team size required 1-5)</p>
+                    <p class="paragraph text-left mb-3" style="margin-left: 68px;font-size: 15px;">(Team size required 1-5)</p>
 
                     <div class="row px-2">
                         <div class="col-12 pr-0 bg-white pl-lg-2 py-lg-3">
