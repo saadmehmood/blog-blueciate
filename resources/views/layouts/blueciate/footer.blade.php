@@ -124,10 +124,10 @@
             <div class="modal-body">
                 <div class="row col-md-12">
                     <div class="col-sm-12 col-md-7 pt-lg-5" style="color: white">
-                        <p style="color: white">Blueciate teamwork...</p>
+                        <p style="color: white; font-size: 26px">Blueciate teamwork...</p>
                         <h1>Transform 2021 <br>#RemoteWork</h1>
                         <p style="font-size: 18px;color: white">Build your remote Engineering team in 4 easy steps to maximize your resources and dramatically improve your business results.</p>
-                        <p style="color: white">
+                        <p style="font-size: 18px;color: white">
                             Break through the IT challenges of 2021 with new ideas, exciting training, bold inspiration and you completely focus on what matters most to your business.
                         </p>
                         <a href="{{ route('remote-work') }}" type="button" class="btn btn-primary">Remote Work</a>

@@ -199,7 +199,9 @@
                 scaleBannerVideoSize('.video-container .filter');
                 scaleBannerVideoSize('.video-container video');
             });
-            $('#remoteWork').modal();
+            $('#remoteWork').modal();setTimeout(function() {
+                $('#remoteWork').modal('hide').fadeOut(2000);
+            }, 10000);
             // if (Cookies.get('webinar-feb') !== 'submitted') {
             // }
         });
