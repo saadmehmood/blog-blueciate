@@ -5,10 +5,10 @@
 
             font-family: 'Open Sans', sans-serif;
             background: rgb(21,105,224);
-            background: -moz-linear-gradient(90deg, rgba(21,105,224,1) 0%, rgba(152,255,191,1) 100%);
-            background: -webkit-linear-gradient(90deg, rgba(21,105,224,1) 0%, rgba(152,255,191,1) 100%);
-            background: linear-gradient(90deg, rgba(21,105,224,1) 0%, rgba(152,255,191,1) 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1569e0",endColorstr="#98ffbf",GradientType=1);
+            background: -moz-linear-gradient(90deg, rgba(21,105,224,1) 0%, rgba(0,176,80,1) 100%);
+            background: -webkit-linear-gradient(90deg, rgba(21,105,224,1) 0%, rgba(0,176,80,1) 100%);
+            background: linear-gradient(90deg, rgba(21,105,224,1) 0%, rgba(0,176,80,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1569e0",endColorstr="#00b050",GradientType=1);
         }
         .block {margin-bottom: 0}
         .modal {
@@ -77,9 +77,15 @@
         }
 
         .box-shadow-bottom {
-            -webkit-box-shadow: 5px 10px 13px -14px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-            box-shadow: 5px 10px 13px -14px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-            border: #0070c0 solid;
+            padding: 1.5rem 1.3rem 1rem;
+            margin-bottom: 16px;
+            border-radius: 10px;
+            box-shadow: -0.1px 4px 24.1px 4.9px rgb(0 0 0 / 15%);
+            background-color: #fff;
+            transition: visibility .5s ease,opacity .5s ease;
+            /*-webkit-box-shadow: 5px 10px 13px -14px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);*/
+            /*box-shadow: 5px 10px 13px -14px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);*/
+            /*border: #0070c0 solid;*/
         }
 
         .font-size-48 {
@@ -384,7 +390,7 @@
     $images = ['remote-work.png'];
     ?>
     {{--        @include('blueciate.image-slider')--}}
-    <div class="container-fluid top-banner">
+    <div class="container-fluid top-banner" id="top-banner">
         <div class="row" style="min-height: 400px">
             <div class="col">
                 <p class="banner-paragraph">helping companies to be ready for your Digital Transformation step & what is next
@@ -426,6 +432,7 @@
                 <br>
                 <br>
                 <div class="col-12 pr-0 bg-white pl-lg-2 py-lg-3 text-center">
+                    <p class="paragraph text-center" style="font-size: 15px;">(I wanted to have my application development, production support, network support team member)</p>
 
                     <input type="radio" class="btn-check" name="work_type" id="steps-ad" autocomplete="off"
                            value="Application Development">
@@ -561,9 +568,9 @@
                 </div>
             </div>
 
-            <div class="row mt-4 mt-lg-4 bg-white box-shadow-bottom">
+            <div class="row mt-4 mt-lg-4 bg-white justify-content-center">
 
-                <div class="col-md-12 px-3">
+                <div class="col-md-11 px-3 box-shadow-bottom">
                     <h2 class="heading">Tell us about <span class="text-highlight">Yourself</span></h2>
                     <div class="row">
                         <div class="col-md-6 col-sm-12">
@@ -609,42 +616,44 @@
         <div id="thank_box" style="display: none;">
             <div class="row" data-aos="fade-up" data-aos-duration="1500">
                 <div class="col-md-12 col-sm-12 px-3">
-                    <h2 class="font-size-48 heading mt-lg-5 text-center"><span class="text-highlight">Thank you for your business.<br> we will get back to you shortly.</span></h2>
+                    <h2 class="font-size-36 heading mt-lg-5 text-center"><span class="text-highlight"><span style="font-size: 72px; font-weight: 900;">Thank you</span><br> we will get back to you shortly.</span></h2>
                 </div>
             </div>
 
-            <div class="row py-5" data-aos="fade-up" data-aos-duration="1500">
-                <div class="col-md-6 px-0" style="position: relative; margin: 0 auto;">
-                    <div class="inner-box">
-                        <div class="image">
-                            <img itemprop="thumbnailUrl" src="/blueciate/img/auraportal-video-thumb.png" alt="Process Automation in 3 Steps thumbnail" role="button" aria-label="Process Automation in 3 Steps video">
-                        </div>
-                        <div class="video-overlay">
-                            <img src="/blueciate/img/videoOverlay.png" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/muUopRjuKgk">
-                        </div>
-                    </div>
-                </div>
-            </div>
+{{--            <div class="row py-5" data-aos="fade-up" data-aos-duration="1500">--}}
+{{--                <div class="col-md-6 px-0" style="position: relative; margin: 0 auto;">--}}
+{{--                    <div class="inner-box">--}}
+{{--                        <div class="image">--}}
+{{--                            <img itemprop="thumbnailUrl" src="/blueciate/img/auraportal-video-thumb.png" alt="Process Automation in 3 Steps thumbnail" role="button" aria-label="Process Automation in 3 Steps video">--}}
+{{--                        </div>--}}
+{{--                        <div class="video-overlay">--}}
+{{--                            <img src="/blueciate/img/videoOverlay.png" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/muUopRjuKgk">--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
 
-            <div class="row py-5" data-aos="fade-up" data-aos-duration="1500">
-                <div class="col-md-6 px-0" style="position: relative; margin: 0 auto;">
-                    <div class="inner-box">
-                        <div class="image">
-                            <img itemprop="thumbnailUrl" src="/blueciate/img/blue-connect-desktop.png" alt="Process Automation in 3 Steps thumbnail" role="button" aria-label="Process Automation in 3 Steps video">
-                        </div>
-                        <div class="video-overlay">
-                            <img src="/blueciate/img/videoOverlay.png" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/bVuD0mDhho0">
-                        </div>
-                    </div>
-                </div>
-            </div>
+{{--            <div class="row py-5" data-aos="fade-up" data-aos-duration="1500">--}}
+{{--                <div class="col-md-6 px-0" style="position: relative; margin: 0 auto;">--}}
+{{--                    <div class="inner-box">--}}
+{{--                        <div class="image">--}}
+{{--                            <img itemprop="thumbnailUrl" src="/blueciate/img/blue-connect-desktop.png" alt="Process Automation in 3 Steps thumbnail" role="button" aria-label="Process Automation in 3 Steps video">--}}
+{{--                        </div>--}}
+{{--                        <div class="video-overlay">--}}
+{{--                            <img src="/blueciate/img/videoOverlay.png" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/bVuD0mDhho0">--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
         </div>
 
 
-            <div class="row mt-lg-4 mt-4">
+            <div class="row mt-lg-4 mt-4 justify-content-center">
                 <div class="col-md-12 col-sm-12 pb-3">
                     <h2 class="heading" style="font-size: 22px; color: black;">In Collaboration with technology partners:</h2>
                 </div>
+                <div class="col-11 box-shadow-bottom">
+                    <div class="row">
                 <div class="col-md-2 col-sm-12">
                     <img src="/blueciate/img/univergblue.png" style="width:132px">
                 </div>
@@ -670,26 +679,28 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row mt-lg-4">
-                <div class="col-md-2 col-sm-12">
-                    <img src="/blueciate/img/auralogo.png" style="width:132px">
                 </div>
-                <div class="col-md-7 col-sm-12">
-                    <h2 class="heading-small">Remote Work,Home, office, anywhere</h2>
-                    <p class="paragraph">
-                        <span style="color: #0070c0;">AuraQuantic</span> helps you digitize and orchestrate all types of business processes and rapidly create
-                        end-to-end business applications. Complete low-code platform for building the enterprise solutions that drive Digital Transformation.
-                        <a href="{{ route('bpm') }}">more...</a>
-                    </p>
-                </div>
-                <div class="col-md-2 px-0" style="position: relative; margin: 0 auto;">
-                    <div class="inner-box">
-                        <div class="image">
-                            <img itemprop="thumbnailUrl" src="/blueciate/img/auraportal-video-thumb.png" alt="Process Automation in 3 Steps thumbnail" role="button" aria-label="Process Automation in 3 Steps video">
+                    <div class="row mt-4">
+                        <div class="col-md-2 col-sm-12">
+                            <img src="/blueciate/img/auralogo.png" style="width:132px">
                         </div>
-                        <div class="video-overlay">
-                            <img src="/blueciate/img/videoOverlay.png" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/muUopRjuKgk">
+                        <div class="col-md-7 col-sm-12">
+                            <h2 class="heading-small">Remote Work,Home, office, anywhere</h2>
+                            <p class="paragraph">
+                                <span style="color: #0070c0;">AuraQuantic</span> helps you digitize and orchestrate all types of business processes and rapidly create
+                                end-to-end business applications. Complete low-code platform for building the enterprise solutions that drive Digital Transformation.
+                                <a href="{{ route('bpm') }}">more...</a>
+                            </p>
+                        </div>
+                        <div class="col-md-2 px-0" style="position: relative; margin: 0 auto;">
+                            <div class="inner-box">
+                                <div class="image">
+                                    <img itemprop="thumbnailUrl" src="/blueciate/img/auraportal-video-thumb.png" alt="Process Automation in 3 Steps thumbnail" role="button" aria-label="Process Automation in 3 Steps video">
+                                </div>
+                                <div class="video-overlay">
+                                    <img src="/blueciate/img/videoOverlay.png" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/muUopRjuKgk">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -787,7 +798,7 @@
             </div>
     </div>
     <div class="container-fluid">
-            <div class="row justify-content-center" style="background-color: #6dab3c;">
+            <div class="row justify-content-center" style="background-color: #00b050;">
                 <div class="col-md-7 p-5">
                     <h2 class="heading text-center"
                         style="color: #fff; font-size: 24px; line-height: 24px; font-weight: normal;padding: 10px"><span class="bottom-blueciate-font">Blueciate</span><br> <span class="bottom-text-font">digital transformation platform & team</span><br><br> helps you to build, automate, deploy your applications & you completely focus on your business.</h2>
@@ -860,6 +871,7 @@
                 success: (response) => {
                     if (response) {
                         // this.reset();
+                        $('#top-banner').hide();
                         $('#upload-image-form').hide();
                         $('#thank_box').show();
                     }
