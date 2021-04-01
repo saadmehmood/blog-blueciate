@@ -638,7 +638,7 @@
 
             <div class="row mt-lg-4 mt-4">
                 <div class="col-md-12 col-sm-12 pb-3">
-                    <h2 class="heading" style="font-size: 26px; color: black;">In Collaboration with technology partners:</h2>
+                    <h2 class="heading" style="font-size: 22px; color: black;">In Collaboration with technology partners:</h2>
                 </div>
                 <div class="col-md-2 col-sm-12">
                     <img src="/blueciate/img/univergblue.png" style="width:132px">
@@ -672,7 +672,7 @@
 
             <div class="row mt-lg-4">
                 <div class="col-md-12 py-3 px-3">
-                    <h2 class="heading">Why Blueciate?</h2>
+                    <h2 class="heading" style="font-size: 22px"><span style="color: black">Why</span> Blueciate?</h2>
                 </div>
             </div>
 
