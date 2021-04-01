@@ -643,7 +643,7 @@
                 <div class="col-md-2 col-sm-12">
                     <img src="/blueciate/img/univergblue.png" style="width:132px">
                 </div>
-                <div class="col-md-10 col-sm-12">
+                <div class="col-md-7 col-sm-12">
                     <h2 class="heading-small">Connect, Collaborate, Orchestrate</h2>
                     <p class="paragraph">
                         <span style="color: #0070c0;">NEC UNIVERGE BLUE CONNECT, MEET, SHARE, ENGAGE</span> an easy-to-use cloud-based communications
@@ -655,18 +655,38 @@
                         <a href="{{ route('univerge-blue') }}">more...</a>
                     </p>
                 </div>
+                <div class="col-md-2 px-0" style="position: relative; margin: 0 auto;">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img itemprop="thumbnailUrl" src="/blueciate/img/blue-connect-desktop.png" alt="Process Automation in 3 Steps thumbnail" role="button" aria-label="Process Automation in 3 Steps video">
+                        </div>
+                        <div class="video-overlay">
+                            <img src="/blueciate/img/videoOverlay.png" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/bVuD0mDhho0">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="row mt-lg-4">
                 <div class="col-md-2 col-sm-12">
                     <img src="/blueciate/img/auralogo.png" style="width:132px">
                 </div>
-                <div class="col-md-10 col-sm-12">
+                <div class="col-md-7 col-sm-12">
                     <h2 class="heading-small">Remote Work,Home, office, anywhere</h2>
                     <p class="paragraph">
                         <span style="color: #0070c0;">AuraQuantic</span> helps you digitize and orchestrate all types of business processes and rapidly create
                         end-to-end business applications. Complete low-code platform for building the enterprise solutions that drive Digital Transformation.
                         <a href="{{ route('bpm') }}">more...</a>
                     </p>
+                </div>
+                <div class="col-md-2 px-0" style="position: relative; margin: 0 auto;">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img itemprop="thumbnailUrl" src="/blueciate/img/auraportal-video-thumb.png" alt="Process Automation in 3 Steps thumbnail" role="button" aria-label="Process Automation in 3 Steps video">
+                        </div>
+                        <div class="video-overlay">
+                            <img src="/blueciate/img/videoOverlay.png" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/muUopRjuKgk">
+                        </div>
+                    </div>
                 </div>
             </div>
 
