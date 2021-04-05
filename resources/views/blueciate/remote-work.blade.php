@@ -596,7 +596,8 @@
                     $skills = [
                         'Windows',
                         'linux',
-                        'Oracle.SAP',
+                        'Oracle',
+                        'SAP',
                         'HANA',
                         'SQL Server',
                         'DB2',
