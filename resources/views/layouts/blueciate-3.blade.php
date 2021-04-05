@@ -57,7 +57,7 @@
     <div id="wrapper">
         @include('layouts.blueciate.header-2')
             @yield('content')
-{{--        @include('layouts.blueciate.footer')--}}
+        @include('layouts.blueciate.footer')
         </div>
     </div>
 <!-- jQuery -->

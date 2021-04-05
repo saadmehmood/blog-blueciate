@@ -922,7 +922,7 @@
             </div>
 
     </div>
-{{--    @include('layouts.blueciate.contact')--}}
+    @include('layouts.blueciate.contact')
 
 
     <!-- Modal -->
