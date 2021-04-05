@@ -729,7 +729,7 @@
         <div id="thank_box" style="display: none;">
             <div class="row" data-aos="fade-up" data-aos-duration="1500">
                 <div class="col-md-12 col-sm-12 px-3">
-                    <h2 class="font-size-36 heading mt-lg-5 text-center"><span class="text-highlight"><span style="font-size: 72px; font-weight: 900;">Thank you</span><br> we will get back to you shortly.</span></h2>
+                    <h2 class="font-size-36 heading mt-lg-5 text-center"><span class="text-highlight"><span style="font-size: 80px; font-weight: 900;">Thank You</span><br> <span style="color: black">we will get back to you shortly.</span></span></h2>
                 </div>
             </div>
 
@@ -875,7 +875,7 @@
                 <div class="col">
                     <div class=" box px-3 py-4">
                     <h2 class="heading-small">Blueciate <span class="text-highlight">RemoteWork</span>?</h2>
-                    <p class="paragraph-small">Collaborate maintain and even increase productivity throughout the entire business ecosystem,</p>
+                    <p class="paragraph-small">Collaborate maintain, , full-featured phone system combined with chat and even increase productivity throughout the entire business ecosystem,</p>
                     </div>
                 </div>
                 <div class="col">
@@ -899,13 +899,13 @@
                 <div class="col">
                     <div class=" box px-3 py-4">
                     <h2 class="heading-small">Connect, <span class="text-highlight">Collaborate,</span> Orchestrate</h2>
-                    <p class="paragraph-small">Take your business to the next level with fully integrated unified communications, full-featured phone system combined with chat, web/video conferencing, and file sync, share& backup.</p>
+                    <p class="paragraph-small">Take your business to the next level with fully integrated unified communications.</p>
                     </div>
                 </div>
                 <div class="col">
                     <div class=" box px-3 py-4">
                     <h2 class="heading-small">UNIVERGE BLUE <span class="text-highlight">CONNECT:</span></h2>
-                    <p class="paragraph-small">Take your business to the next level with fully integrated unified communications. Easy-to-use cloud-based communications that helps your employees to be more productive and collaborative.</p>
+                    <p class="paragraph-small">Easy-to-use cloud-based communications that helps your employees to be more productive and collaborative.</p>
                     </div>
                 </div>
             </div>
