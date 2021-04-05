@@ -727,9 +727,11 @@
             </div>
         </form>
         <div id="thank_box" style="display: none;">
-            <div class="row" data-aos="fade-up" data-aos-duration="1500">
-                <div class="col-md-12 col-sm-12 px-3">
+            <div class="row text-center" data-aos="fade-up" data-aos-duration="1500">
+                <div class="col-md-12 col-sm-12 px-3 mb-4">
                     <h2 class="font-size-36 heading mt-lg-5 text-center"><span class="text-highlight"><span style="font-size: 80px; font-weight: 900;">Thank You</span><br> <span style="color: black">we will get back to you shortly.</span></span></h2>
+
+                    <a class="btn btn-primary" id="back-btn" href="#"> Back</a>
                 </div>
             </div>
 
@@ -919,7 +921,7 @@
             </div>
 
     </div>
-    @include('layouts.blueciate.contact')
+{{--    @include('layouts.blueciate.contact')--}}
 
 
     <!-- Modal -->
@@ -962,6 +964,11 @@
             }
         });
 
+        $('#back-btn').click(function () {
+            $('#top-banner').show();
+            $('#upload-image-form').show();
+            $('#thank_box').hide();
+        });
         $('#upload-image-form').submit(function (e) {
             e.preventDefault();
             let formData = new FormData(this);
@@ -987,6 +994,11 @@
                         $('#top-banner').hide();
                         $('#upload-image-form').hide();
                         $('#thank_box').show();
+
+                        $('#submit-button').show();
+                        $('#loader').hide();
+
+                        $("html, body").animate({ scrollTop: 0 }, "slow");
                     }
                 },
                 error: function (response) {
