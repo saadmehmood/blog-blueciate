@@ -732,7 +732,7 @@
                 <div class="col-md-12 col-sm-12 px-3 mb-4">
                     <h2 class="font-size-36 heading mt-lg-5 text-center"><span class="text-highlight"><span style="font-size: 80px; font-weight: 900;">Thank You</span><br> <span style="color: black">we will get back to you shortly.</span></span></h2>
 
-                    <a class="btn btn-primary" id="back-btn" href="#"> Back</a>
+                    <a class="btn btn-primary" style="font-size: 1.5rem; font-weight: bold" id="back-btn" href="#"> Back</a>
                 </div>
             </div>
 
