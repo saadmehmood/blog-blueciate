@@ -43,7 +43,7 @@
                 That’s why I BlueCiate..
             </h5>
             <div class="secondary-btn-search">
-                <button class="button btn btn-success  get-started-btn p-3 mt-4">Get Started</button>
+                <a class="button btn btn-success  get-started-btn p-3 mt-4" href="{{ route('remote-work') }}">Get Started</a>
             </div>
         </div>
     </div>
