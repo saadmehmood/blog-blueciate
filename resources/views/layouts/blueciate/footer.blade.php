@@ -132,7 +132,7 @@
                         </p>
                         <a href="{{ route('remote-work') }}" type="button" class="btn btn-primary">Remote Work</a>
                     </div>
-                    <div class="col-md-5 text-right">
+                    <div class="col-md-5 text-right modal-img">
                         <img src="/blueciate/img/remote-work-popup.jpeg" alt="" style="width: 85%" />
                     </div>
                 </div>

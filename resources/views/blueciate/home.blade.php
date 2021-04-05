@@ -7,6 +7,23 @@
             position: relative;
             z-index: 2;
         }
+
+
+        @media screen and (max-width: 600px) {
+            .sec-row-title {
+                font-size: 24px;
+            }
+            #header .search {
+                margin-top: 0px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            h4 {
+                font-size: 1rem;
+            }
+            p {font-size: 12px}
+        }
         /*.video-paragraph::after {*/
         /*    position: absolute;*/
         /*    width: 100%;*/
