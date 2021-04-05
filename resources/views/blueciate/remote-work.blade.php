@@ -435,7 +435,7 @@
                     <p class="paragraph text-center" style="font-size: 15px;">(I wanted to have my application development, production support, network support team member)</p>
 
                     <input type="radio" class="btn-check" name="work_type" id="steps-ad" autocomplete="off"
-                           value="Application Development">
+                           value="Application Development" checked>
                     <label class="btn btn-steps" for="steps-ad">Application Development</label>
                     <input type="radio" class="btn-check" name="work_type" id="steps-ps" autocomplete="off"
                            value="Production Suport">
@@ -454,7 +454,7 @@
             {{--                </div>--}}
             {{--            </div>--}}
 
-            <div class="row mt-4 mt-lg-4" data-aos="fade-up" data-aos-duration="1500">
+            <div class="row mt-4 mt-lg-4" data-aos="fade-up" data-aos-duration="1500" id="ad-step2">
                 <div class="col-12 pr-0 bg-white pl-lg-2 py-lg-3">
                     <h2 class="heading mb-0" style="line-height: 24px"><span class="steps">Step 2:</span> Define Scope of Work?</h2>
                     <p class="paragraph text-left mb-3" style="margin-left: 68px;font-size: 15px;">(select your Blueciate Remote Development Team.)</p>
@@ -477,9 +477,60 @@
                     foreach ($options as $option){
                     ?>
 
-                    <input type="checkbox" class="btn-check" name="options[]" id="option{{ $count }}"
+                    <input type="checkbox" class="btn-check ad-options-2" name="options[]" id="option{{ $count }}"
                            value="{{ $option }}" autocomplete="off">
                     <label class="btn btn-secondary" for="option{{ $count }}">{{ $option }}</label>
+
+                    <?php
+                    $count++;
+                    } ?>
+                </div>
+            </div>
+            <div class="row mt-4 mt-lg-4" data-aos="fade-up" data-aos-duration="1500" style="display: none;" id="ps-step2">
+                <div class="col-12 pr-0 bg-white pl-lg-2 py-lg-3">
+                    <h2 class="heading mb-0" style="line-height: 24px"><span class="steps">Step 2:</span> Define Scope of Work?</h2>
+                    <p class="paragraph text-left mb-3" style="margin-left: 68px;font-size: 15px;">(select your Blueciate Remote Development Team.)</p>
+
+                    <?php
+                    $options = [
+                        'System Support',
+                        'ERP-Application Support',
+                        'Database Support',
+                        'Technical Support Engineer'
+                    ];
+                    $count = 1;
+                    foreach ($options as $option){
+                    ?>
+
+                    <input type="checkbox" class="btn-check ps-options-2" name="options[]" id="ps-option{{ $count }}"
+                           value="{{ $option }}" autocomplete="off">
+                    <label class="btn btn-secondary" for="ps-option{{ $count }}">{{ $option }}</label>
+
+                    <?php
+                    $count++;
+                    } ?>
+                </div>
+            </div>
+            <div class="row mt-4 mt-lg-4" data-aos="fade-up" data-aos-duration="1500" style="display: none;" id="ns-step2">
+                <div class="col-12 pr-0 bg-white pl-lg-2 py-lg-3">
+                    <h2 class="heading mb-0" style="line-height: 24px"><span class="steps">Step 2:</span> Define Scope of Work?</h2>
+                    <p class="paragraph text-left mb-3" style="margin-left: 68px;font-size: 15px;">(select your Blueciate Remote Development Team.)</p>
+
+                    <?php
+                    $options = [
+                        'Data Center Suport',
+                        'Network Design Engineer',
+                        'Networking Support Engg',
+                        'Engineer - Hardware',
+                        'Mainframe Support Analyst'
+                    ];
+                    $count = 1;
+                    foreach ($options as $option){
+                    ?>
+
+                    <input type="checkbox" class="btn-check ns-options-2" name="options[]" id="ns-option{{ $count }}"
+                           value="{{ $option }}" autocomplete="off">
+                    <label class="btn btn-secondary" for="ns-option{{ $count }}">{{ $option }}</label>
 
                     <?php
                     $count++;
@@ -493,7 +544,7 @@
             {{--                </div>--}}
             {{--            </div>--}}
 
-            <div class="row mt-4 mt-lg-4" data-aos="fade-up" data-aos-duration="1500">
+            <div class="row mt-4 mt-lg-4" data-aos="fade-up" data-aos-duration="1500" id="ad-step3">
                 <div class="col-12 pr-0 bg-white pl-lg-2 py-lg-3">
                     <h2 class="heading mb-0" style="line-height: 24px"><span  class="steps">Step 3:</span> Select platform & skill-set?</h2>
                     <p class="paragraph text-left mb-3" style="margin-left: 68px;font-size: 15px;">(select the right skill-set) </p>
@@ -526,7 +577,69 @@
                     foreach ($skills as $skill){
                     ?>
 
-                    <input type="checkbox" class="btn-check" name="skills[]" id="skill{{ $count }}" value="{{ $skill }}"
+                    <input type="checkbox" class="btn-check ad-skills" name="skills[]" id="ns-skill{{ $count }}" value="{{ $skill }}"
+                           autocomplete="off">
+                    <label class="btn btn-secondary" for="ns-skill{{ $count }}">{{ $skill }}</label>
+
+                    <?php
+                    $count++;
+                    } ?>
+                </div>
+            </div>
+
+            <div class="row mt-4 mt-lg-4" data-aos="fade-up" data-aos-duration="1500" style="display: none" id="ps-step3">
+                <div class="col-12 pr-0 bg-white pl-lg-2 py-lg-3">
+                    <h2 class="heading mb-0" style="line-height: 24px"><span  class="steps">Step 3:</span> Select platform & skill-set?</h2>
+                    <p class="paragraph text-left mb-3" style="margin-left: 68px;font-size: 15px;">(select the right skill-set) </p>
+
+                    <?php
+                    $skills = [
+                        'Windows',
+                        'linux',
+                        'Oracle.SAP',
+                        'HANA',
+                        'SQL Server',
+                        'DB2',
+                        'ETC',
+                        'SQL Developer',
+                        'SAP BASIS',
+                        'SAP SECURITY'
+                    ];
+                    $count = 1;
+                    foreach ($skills as $skill){
+                    ?>
+
+                    <input type="checkbox" class="btn-check ns-skills" name="skills[]" id="ps-skill{{ $count }}" value="{{ $skill }}"
+                           autocomplete="off">
+                    <label class="btn btn-secondary" for="ps-skill{{ $count }}">{{ $skill }}</label>
+
+                    <?php
+                    $count++;
+                    } ?>
+                </div>
+            </div>
+
+            <div class="row mt-4 mt-lg-4" data-aos="fade-up" data-aos-duration="1500" style="display: none" id="ns-step3">
+                <div class="col-12 pr-0 bg-white pl-lg-2 py-lg-3">
+                    <h2 class="heading mb-0" style="line-height: 24px"><span  class="steps">Step 3:</span> Select platform & skill-set?</h2>
+                    <p class="paragraph text-left mb-3" style="margin-left: 68px;font-size: 15px;">(select the right skill-set) </p>
+
+                    <?php
+                    $skills = [
+                        'Network or Security Engineer',
+                        'Optical Network Engineer',
+                        'Network and Systems Engineer',
+                        'Data Center Engineer',
+                        'Cisco Network Engineer',
+                        'Cyber Security Analyst',
+                        'Network Analyst',
+                        'Junior Network Engineer'
+                    ];
+                    $count = 1;
+                    foreach ($skills as $skill){
+                    ?>
+
+                    <input type="checkbox" class="btn-check ps-skills" name="skills[]" id="skill{{ $count }}" value="{{ $skill }}"
                            autocomplete="off">
                     <label class="btn btn-secondary" for="skill{{ $count }}">{{ $skill }}</label>
 
@@ -904,6 +1017,37 @@
 
         $(document).ready(function(){
             autoPlayYouTubeModal();
+            $('input[type=radio][name=work_type]').change(function() {
+                $('.ad-options-2').prop('checked', false);
+                $('.ns-options-2').prop('checked', false);
+                $('.ps-options-2').prop('checked', false);
+                $('.ad-skills').prop('checked', false);
+                $('.ns-skills').prop('checked', false);
+                $('.ps-skills').prop('checked', false);
+
+                if (this.value == 'Application Development') {
+                    $('#ad-step2').show();
+                    $('#ad-step3').show();
+                    $('#ps-step2').hide();
+                    $('#ps-step3').hide();
+                    $('#ns-step2').hide();
+                    $('#ns-step3').hide();
+                } else if (this.value == 'Production Suport') {
+                    $('#ad-step2').hide();
+                    $('#ad-step3').hide();
+                    $('#ps-step2').show();
+                    $('#ps-step3').show();
+                    $('#ns-step2').hide();
+                    $('#ns-step3').hide();
+                } else if (this.value == 'Networking Support') {
+                    $('#ad-step2').hide();
+                    $('#ad-step3').hide();
+                    $('#ps-step2').hide();
+                    $('#ps-step3').hide();
+                    $('#ns-step2').show();
+                    $('#ns-step3').show();
+                }
+            });
             // $('#webinar').modal();
             // if (Cookies.get('webinar-feb') !== 'submitted') {
             // }
