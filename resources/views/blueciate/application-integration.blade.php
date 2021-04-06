@@ -1,13 +1,10 @@
-﻿@extends('layouts.blueciate-2')
+﻿@extends('layouts.blueciate-3')
 @push('styles')
     <link rel="stylesheet" href="/blueciate/css/style-awsm.css">
     <style>
         body{
 
             font-family: 'Open Sans',sans-serif;
-        }
-        .container{
-            max-width: 100%;
         }
         .modal {
             z-index: 1050;
@@ -558,81 +555,45 @@
                     </div>
                 </div>
             </div>
-            <div class="lb-grid lb-row lb-collapse" style="background-color:#232f3e;">
-                <div class="lb-col lb-tiny-24 lb-mid-10">
-                    <div class="lb-tiny-iblock lb-small-pad lb-box" style="padding-left:50px; margin-top:90px; padding-right:50px;">
-                        <div class="lb-txt-white lb-txt-18 lb-rtxt">
-                            <p class="lb-txt-white"><i>“We now have an agile, scalable foundation on which to do all kinds of amazing things. Much like with the exploration of space, we’re just starting to imagine all that we can do with it.”</i><br> </p>
-                        </div>
-                        <div class="lb-txt-white lb-txt-16 lb-rtxt" style="margin-bottom:0px;">
-                            <p class="lb-txt-white"><b>- Bryan Walls</b><br> <i>Imagery Experts Deputy Program Manager, NASA</i><br> </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="lb-col lb-tiny-24 lb-mid-14">
-                    <div class="lb-none-v-margin lb-box" style="background-color:#F2F3F3;">
-                        <h2 id="Case_studies" class="lb-txt-none lb-txt-28 lb-h2 lb-title"> Case studies</h2>
-                        <div class="lb-none-pad lb-none-v-margin lb-xb-grid-wrap">
-                            <div class="lb-xb-grid lb-row-max-large lb-xb-equal-height lb-snap lb-tiny-xb-1 lb-small-xb-2">
-                                <div class="lb-xbcol">
-                                    <div class="lb-border-p lb-box lb-has-link" style="background-color:#FFFFFF;">
-                                        <a href="/solutions/case-studies/alpha-apps/?c=ai&amp;sec=cs1">
-                                            <figure class="lb-none-v-margin lb-img">
-                                                <div class="lb-none-pad">
-                                                    <img src="//d1.awsstatic.com/product-marketing/cognito/Alpha_Apps.feb9f9424a4f6d587b90d9d8a27b77db565378f0.png" alt="Alpha_Apps" title="Alpha_Apps" class="cq-dd-image">
-                                                </div>
-                                            </figure>
-                                            <div class="lb-txt-none lb-txt-16 lb-txt">
-                                                Alpha Apps cuts content delivery costs by 80% using AWS Step Functions
-                                            </div> </a>
-                                    </div>
-                                </div>
-                                <div class="lb-xbcol">
-                                    <div class="lb-border-p lb-box lb-has-link" style="background-color:#FFF;">
-                                        <a href="/solutions/case-studies/the-guardian/?c=ai&amp;sec=cs2">
-                                            <figure class="lb-tiny-v-margin lb-img">
-                                                <div>
-                                                    <img src="//d1.awsstatic.com/logos/customers/the-guardian-logo-200x100.1588cf9c247be427480da817cb74c1f75ffc323f.png" alt="the-guardian-logo-200x100" title="the-guardian-logo-200x100" class="cq-dd-image">
-                                                </div>
-                                            </figure>
-                                            <div class="lb-txt-none lb-tiny-iblock lb-txt-16 lb-txt">
-                                                Guardian News &amp; Media automates subscription fulfillment using AWS Step Functions
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="lb-xbcol">
-                                    <div class="lb-border-p lb-box lb-has-link" style="background-color:#FFFFFF;">
-                                        <a href="/solutions/case-studies/change-healthcare/?c=ai&amp;sec=cs3">
-                                            <figure class="lb-img">
-                                                <div>
-                                                    <img src="//d1.awsstatic.com/Customer%20References%20Directory%20Logos/Change-Healthcare_Logo_1x.d30835cec46509a8c2982efea196812e9bfe65da.png" alt="Change-Healthcare_Logo_1x" title="Change-Healthcare_Logo_1x" class="cq-dd-image">
-                                                </div>
-                                            </figure>
-                                            <div class="lb-txt-none lb-tiny-iblock lb-txt-16 lb-txt">
-                                                Change Healthcare handles millions of confidential transactions daily using Amazon SNS &amp; SQS
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="lb-xbcol">
-                                    <div class="lb-border-p lb-box lb-has-link" style="background-color:#FFFFFF;">
-                                        <a href="/solutions/case-studies/redbus/?c=ai&amp;sec=cs4">
-                                            <figure class="lb-none-v-margin lb-img">
-                                                <div>
-                                                    <img src="//d1.awsstatic.com/Customer%20References%20Directory%20Logos/redBus_Customer-Reference_Logo.fbca5bc65bc3ea5cb83c106f1816ed835a9eebda.png" alt="redBus_Customer-Reference_Logo" title="redBus_Customer-Reference_Logo" class="cq-dd-image">
-                                                </div>
-                                            </figure>
-                                            <div class="lb-txt-none lb-tiny-iblock lb-txt-16 lb-txt">
-                                                redBus Uses SNS and SQS for monitoring, alerts and intercommunication
-                                            </div> </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-12 col-lg-12 col-sm-12">
+                    <h2 class="heading">What's trending in the shift to digital Transformation</h2>
+                    <p class="paragraph">
+                        The right talent, the right attitude, the right platform, the innovation business quickly deliver deployable IoT solutions across the business.
+                    </p>
+                    <p class="paragraph">
+                        To keep up, the modern enterprise needs to innovate at mach speed. But innovation can’t get off the ground without digitalizing and connecting all systems – both in the cloud and on premises.
+                    </p>
+                    <p class="paragraph">
+                        Blueciate working with Integration webMethods API, integration (iPaaS & on-prem) and microservices platform offers unified out-of-the-box connectivity that has been architected for the next generation of challenges in digital transformation.Our mission is to clear the roadblocks to your digital future.
+                    </p>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="/blueciate/img/application-integration-1.png" style="width: 80%">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 col-lg-6 text-center">
+                    <p class="paragraph">
+                        In an age of ever-faster change, you need a forward-thinking partner with a vision ... someone
+                        who can help you take your powerful applications to 2050 and beyond. Look ahead to a future
+                        where you can continue to make the most of that investment and the unique business logic built
+                        into your core applications.
+                    </p>
+                    <p class="paragraph">
+                        Blueciate We’re that partner, committed to helping you digitalize your legacy, fast and
+                        risk-free. Together, let’s manage the generational change of developers, modernize your
+                        applications to save costs, expand the reach of your core apps, and accelerate development
+                        in an ultra-modern environment.  
+                    </p>
+                </div>
+                <div class="col-lg-5 col-12 mt-lg-5 mx-lg-5">
+                    <img src="/blueciate/img/application-integration-2.png" style="width: 80%">
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col-12 col-lg-12 col-sm-12">
                 <h2 class="heading">Business with Achieve Artificial Intelligence</h2>
@@ -656,15 +617,6 @@
                 </p>
             </div>
         </div>
-
-        <article id="services" class="hh-services">
-            <div class="container">
-                <section>
-                    <aside class="g lg-twelfths md-one-whole" id="first">
-                    </aside>
-
-                </section>
-            </div>
-        </article>
+        </div>
         @include('layouts.blueciate.contact')
 @endsection
