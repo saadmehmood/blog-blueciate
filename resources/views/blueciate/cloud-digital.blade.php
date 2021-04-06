@@ -250,7 +250,7 @@
         }
     </style>
 @endpush
-@extends('layouts.blueciate-3')
+@extends('layouts.blueciate-2')
 @section('content')
     <?php
     $images = ['cd-1.jpg', 'cd-2.jpg', 'cd-3.jpg', 'cd-4.jpg'];
