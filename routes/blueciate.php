@@ -43,3 +43,4 @@ Route::post('/bpms-ready', 'BlueciateController@bpmsReadyMail')->name('bpmsReady
 Route::get('/univergeblue', 'BlueciateController@univergeBlue')->name('univerge-blue');
 Route::get('/remote-work', 'BlueciateController@remoteWork')->name('remote-work');
 Route::post('/remote-work-mail', 'BlueciateController@remoteWorkMail')->name('remote-work-mail');
+Route::get('/cloud-digital', 'BlueciateController@cloudDigital')->name('cloud-digital');

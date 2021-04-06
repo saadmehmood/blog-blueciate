@@ -244,4 +244,14 @@ class BlueciateController extends Controller
         Mail::to('info@blueciate.com')->send(new RemoteWork($request->all()));
         return true;
     }
+
+    public function cloudDigital()
+    {
+        $title = 'Cloud & Digital :- Blueciate Inc';
+        $metaDescription = 'Cloud & Digital';
+        return view('blueciate.cloud-digital', [
+            'title' => $title,
+            'metaDescription' => $metaDescription
+        ]);
+    }
 }
