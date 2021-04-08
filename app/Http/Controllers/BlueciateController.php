@@ -254,4 +254,14 @@ class BlueciateController extends Controller
             'metaDescription' => $metaDescription
         ]);
     }
+
+    public function iot()
+    {
+        $title = 'IOT :- Blueciate Inc';
+        $metaDescription = 'Internet of things (IOT)';
+        return view('blueciate.iot', [
+            'title' => $title,
+            'metaDescription' => $metaDescription
+        ]);
+    }
 }

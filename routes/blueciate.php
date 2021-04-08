@@ -44,3 +44,4 @@ Route::get('/univergeblue', 'BlueciateController@univergeBlue')->name('univerge-
 Route::get('/remote-work', 'BlueciateController@remoteWork')->name('remote-work');
 Route::post('/remote-work-mail', 'BlueciateController@remoteWorkMail')->name('remote-work-mail');
 Route::get('/cloud-digital', 'BlueciateController@cloudDigital')->name('cloud-digital');
+Route::get('/iot', 'BlueciateController@iot')->name('iot');
