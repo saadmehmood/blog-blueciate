@@ -4,6 +4,7 @@
         body{
 
             font-family: 'Open Sans',sans-serif;
+            background-color: #fff;
         }
         .modal {
             z-index: 1050;
@@ -264,9 +265,9 @@
                 <video data-autoplay="" src="https://imgix.datadoghq.com/video/DD_Tracegraph_gif_smaller_02.mp4" preload="none" class="shadow-card-nohover w-100 lazyloaded" playsinline="" autoplay="" muted="" loop="" poster="https://imgix.datadoghq.com/img/tracesearch_00000.jpg?auto=format" data-poster="https://imgix.datadoghq.com/img/tracesearch_00000.jpg?auto=format"></video>
             </div>
             <div class="col-lg-6 order-lg-6">
-                <h2 class="heading-top text-highlight">Resolve AWS performance issues faster</h2>
+                <h2 class="heading-top text-highlight">Resolve performance issues faster</h2>
                 <ul class="fa-ul">
-                    <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Gain full visibility into your AWS application code performance with end-to-end tracing, profiling, and App Analytics</li>
+                    <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Gain full visibility into your application code performance with end-to-end tracing, profiling, and App Analytics</li>
                     <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Identify critical issues quickly with real-time service maps and alerts on code-level + service-level performance issues</li>
                     <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Test hypotheses in seconds by overlaying events onto time-synchronized graphs</li>
                 </ul>
@@ -278,7 +279,7 @@
                 <h2 class="heading-top text-highlight">See inside any stack, at any scale, anywhere</h2>
                 <p></p>
                 <ul class="fa-ul">
-                    <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Monitor your AWS services, databases, servers, containers, and servlets all in one place with Datadog's 400+ vendor-backed integrations</li>
+                    <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Monitor your services, databases, servers, containers, and servlets all in one place with Datadog's 400+ vendor-backed integrations</li>
                     <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Create custom, drag-and-drop dashboards within seconds</li>
                     <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Seamlessly navigate between infrastructure metrics, application traces, and relevant logs in a single platform</li>
                 </ul>
@@ -294,7 +295,7 @@
                 <video data-autoplay="" src="https://imgix.datadoghq.com/video/hostmapLP_2_comp.mp4" preload="none" class="shadow-card-nohover w-100 lazyloaded" playsinline="" autoplay="" muted="" loop="" poster="https://imgix.datadoghq.com/img/lpghostmap.png?auto=format" data-poster="https://imgix.datadoghq.com/img/lpghostmap.png?auto=format"></video>
             </div>
             <div class="col-lg-6 order-lg-6">
-                <h2 class="heading-top text-highlight">Monitor your AWS infrastructure more effectively</h2>
+                <h2 class="heading-top text-highlight">Monitor your infrastructure more effectively</h2>
                 <ul class="fa-ul">
                     <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>View all your AWS and on-prem servers from a bird's-eye view</li>
                     <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Track ephemeral environments, such as Lambda functions and Docker containers, in real-time</li>
@@ -343,7 +344,7 @@
                     <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Slice and dice data across metrics, traces, and logs with automated tagging integrated throughout the platform</li>
                     <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Collect more traces and high granularity metrics for 15 months or longer</li>
                     <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Ingest all your logs and only pay for the logs you index, with an accessible archive</li>
-                    <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Start monitoring faster with Datadog's streamlined setup process; enable end-to-end AWS visibility in 1-click</li>
+                    <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Start monitoring faster with Datadog's streamlined setup process; enable end-to-end visibility in 1-click</li>
                 </ul>
                 <p></p>
             </div>
@@ -352,37 +353,20 @@
             </div>
         </div>
         <div class="row"><div class="col-12"><hr></div></div>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="heading-top text-highlight">Dashboards & Analytics</h2>
+                <p class="paragraph">Blueciate with certified developers can facilitate the opportunity to build applications that integrate the business logic, control logic, and the database layer with unprecedented performance using best practices. At Blueciate we ensure the machine learning and predictive analytics has the ability to analyze any data type and easily integrate native machine learning algorithms, stream analytics and create text analytics, analysis, mining, search and more. With spatial data processing businesses can leverage geospatial data to create new applications and solutions and dashboard for CRM-XRM based solutions using...</p>
+                <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Descriptive Analytics</li>
+                    <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Diagnostic Analytics</li>
+                    <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Predictive Analytics</li>
+                    <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Prescriptive Analytics</li>
+                </ul>
+                <p></p>
+            </div>
+        </div>
+        <div class="row"><div class="col-12"><hr></div></div>
     </div>
-    <article id="services" class="hh-services">
-      <div class="container">
-        <section>
-          <aside class="g lg-twelfths md-one-whole" id="first">
-              <h3>Dashboards & Analytics</h3>
-              <p style="max-width: 1200px;">
-                  Blueciate with certified developers can facilitate the opportunity to build applications that integrate the business logic, control logic, and the database layer with unprecedented performance using best practices. At Blueciate we ensure the machine learning and predictive analytics has the ability to analyze any data type and easily integrate native machine learning algorithms, stream analytics and create text analytics, analysis, mining, search and more. With spatial data processing businesses can leverage geospatial data to create new applications and solutions and dashboard for CRM-XRM based solutions using...
-              </p>
-              <p>
-              <ul>
-                  <li>
-                      Descriptive Analytics
-                  </li>
-                  <li>
-                      Diagnostic Analytics
-                  </li>
-                  <li>
-                      Predictive Analytics
-                  </li>
-                  <li>
-                      Prescriptive Analytics
-                  </li>
-              </ul>
-              </p>
-              <p style="max-width: 1200px;">
-                  For further details <a href="{{ route('contact-us') }}" class="buttonmore">Contuct us</a>.
-              </p>
-          </aside>
-        </section>
-      </div>
-    </article>
     @include('layouts.blueciate.contact')
 @endsection

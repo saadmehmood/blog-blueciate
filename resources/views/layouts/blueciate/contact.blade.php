@@ -5,7 +5,7 @@
     <div class="container">
         <section>
             <div class="gw" style="font-size:15px;">
-                <div class="g lg-three-twelfths">
+                <div class="g lg-four-twelfths">
                     <!--                            <h4>Contact Us</h4>-->
                     <h1>Get in touch today</h1>
                     <p>
@@ -20,14 +20,12 @@
 
                     </aside>
                 </div>
-                <div class="g lg-one-twelfth">&nbsp;</div>
                 <div class="g lg-two-twelfths">
                     <aside>
                         <span class="icon-envelope"></span>
                         <small><a href="mailto:info@blueciate.com?subject=feedback">info@blueciate.com</a></small>
                     </aside>
                 </div>
-                <div class="g lg-one-twelfth">&nbsp;</div>
                 <div class="g lg-two-twelfths">
                     <aside>
                         <span class="icon-map-pin"></span>
