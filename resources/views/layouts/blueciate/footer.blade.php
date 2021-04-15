@@ -31,7 +31,7 @@
                             <li><a href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
                             <li><a href="{{ route('refund-policy') }}">Press Release</a></li>
                             <li><a href="{{ route('terms-conditions') }}">Terms Of Use</a></li>
-                            <li><a href="{{ route('eula') }}">EULA</a></li>
+                            <li><a href="{{ route('remote-work') }}">Remote Work</a></li>
                             <li><a href="{{ route('about-us') }}">About Us</a></li>
                             <li><a href="{{ route('contact-us') }}">Contact Us</a></li>
                         </ul>

@@ -60,7 +60,7 @@
                 That’s why I BlueCiate..
             </h5>
             <div class="secondary-btn-search">
-                <a class="button btn btn-success  get-started-btn p-3 mt-4" href="{{ route('remote-work') }}">Get Started</a>
+                <a class="button btn btn-success  get-started-btn p-3 mt-4" href="{{ route('remote-work') }}">Remote Work</a>
             </div>
         </div>
     </div>
@@ -375,7 +375,7 @@
             <li><i class="fa fa-check-square"></i>Sales & Purchasing</li>
           </ul>
         </div>
-        <div class="mt-5"><a href="#" class="primary-button button-md">Discover More</a></div>
+        <div class="mt-5"><a href="{{ route('remote-work') }}" class="primary-button button-md">Remote Work</a></div>
       </div>
       <div class="col-md-4 col-12"></div>
     </div>
