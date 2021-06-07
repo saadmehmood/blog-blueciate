@@ -23,7 +23,7 @@
                                 <a href="{{ route('cloud') }}"><i class="fas fa-cloud mr-2"></i>Cloud</a>
                             </li>
                             <li>
-                                <a href="{{ route('products') }}"><i class="fas fa-wifi mr-2"></i>Products</a>
+                                <a href="{{ route('remote-work') }}"><i class="fas fa-wifi mr-2"></i>Remote</a>
                             </li>
                             <li>
                                 <a href="{{ route('consulting') }}"><i class="fas fa-clock mr-2"></i>Consulting</a>

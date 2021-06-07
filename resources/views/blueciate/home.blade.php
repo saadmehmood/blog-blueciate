@@ -54,7 +54,7 @@
                 It's all about
             </h5>
             <h1 class="sec-row-title " style="color: #03a9f4;">
-                Connect, Engage, Communicate, Collaborate & Orchestrate <br>Relationship Management, Low-Code With Hyper-Automation<br> To Unify Your Data in Digital Platform.
+                Connect, Collaborate and Remote working anywhere
             </h1>
             <h5>
                 That’s why I BlueCiate..
