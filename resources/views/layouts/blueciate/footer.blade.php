@@ -124,16 +124,23 @@
             <div class="modal-body">
                 <div class="row col-md-12">
                     <div class="col-sm-12 col-md-7 pt-lg-5" style="color: white">
-                        <p style="color: white; font-size: 26px">Blueciate teamwork...</p>
-                        <h1>Transform 2021 <br>#RemoteWork</h1>
-                        <p style="font-size: 18px;color: white">Build your remote Engineering team in 4 easy steps to maximize your resources and dramatically improve your business results.</p>
-                        <p style="font-size: 18px;color: white">
-                            Break through the IT challenges of 2021 with new ideas, exciting training, bold inspiration and you completely focus on what matters most to your business.
+                        <p style="color: white; font-size: 26px">Blueciate teamwork...</p>
+                        <h1>SAP Controlling Financials  <br>March 24, 2022</h1>
+                        <p style="font-size: 18px;color: white">SAP Controlling 2022 Conference - SAP FICO Training, SAP Financials 2021, SAP Financials Controlling, ERP</p>
+                        <p style="font-size: 18px;color: white; text-align: justify">
+                            Learn new Innovation to drive the Future Direction of SAP Finance from leaders with  S/4HANA Margin Analysis, Predictive Accounting & Continuous Close - Material Ledger Transition When Upgrading to SAP S/4HANA - SAP S/4 Finance Migration to Public Cloud Case Study - Automate Your SAP Finance Processes - SAP Journey to the Intelligent Finance Organization and much More..
                         </p>
-                        <a href="{{ route('remote-work') }}" type="button" class="btn btn-primary">Remote Work</a>
+                        <a href="https://controlling.erpcorp.com/" type="button" class="btn btn-primary">Register Now</a>
                     </div>
                     <div class="col-md-5 text-right modal-img">
-                        <img src="/blueciate/img/remote-work-popup.jpeg" alt="" style="width: 85%" />
+                        <br>
+                        <br>
+                        <img src="/blueciate/img/erp-corp.png" alt="" style="width: 50%" />
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <img src="/blueciate/img/logo-square.jpeg" class="img-fluid" style="width: 50%">
                     </div>
                 </div>
             </div>
