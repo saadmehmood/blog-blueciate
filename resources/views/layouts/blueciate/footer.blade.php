@@ -124,7 +124,6 @@
             <div class="modal-body">
                 <div class="row col-md-12">
                     <div class="col-sm-12 col-md-7 pt-lg-5" style="color: white">
-                        <p style="color: white; font-size: 26px">Blueciate teamwork...</p>
                         <h1>SAP Controlling Financials  <br>March 24, 2022</h1>
                         <p style="font-size: 18px;color: white">SAP Controlling 2022 Conference - SAP FICO Training, SAP Financials 2021, SAP Financials Controlling, ERP</p>
                         <p style="font-size: 18px;color: white; text-align: justify">
