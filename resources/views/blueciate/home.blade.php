@@ -101,7 +101,7 @@
 <!--quicklinks-->
 
 <!--Rewards & Membership-->
-<div class="jumbotron jumbotron-fluid rewards_sec mb-0 pb-0" id="rewards_sec">
+<div class="jumbotron jumbotron-fluid mb-0 pb-0" id="rewards_sec" style="background-color: rgb(255, 255, 255);">
   <div class="container text-center">
     <img class="r_img" src="/blueciate/index_files/1426735.png">
     <h1 class="r_heading color-dark">SAP S/4HANA Finance & ORACLE EBS<br>Business Process Management Software (BPM)</h1>
