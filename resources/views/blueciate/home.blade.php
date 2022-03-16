@@ -103,8 +103,8 @@
 <!--Rewards & Membership-->
 <div class="jumbotron jumbotron-fluid mb-0 pb-0" id="rewards_sec" style="background-color: rgb(255, 255, 255);">
   <div class="container text-center">
-{{--    <img class="r_img" src="/blueciate/index_files/1426735.png">--}}
-    <a href="{{ route('consulting') }}"><img class="" src="/blueciate/img/The best run.jpg"></a>
+    <img class="r_img" src="/blueciate/index_files/1426735.png">
+{{--    <a href="{{ route('consulting') }}"><img class="" src="/blueciate/img/The best run.jpg"></a>--}}
     <h1 class="r_heading color-dark">SAP S/4HANA Finance & ORACLE EBS<br>Business Process Management Software (BPM)</h1>
     <h4 class="r_subheading color-dark">Business Process Management (BPM) software solution with Low-Code, Automation made Fast, Simple
         and makes it easier to build solutions for complex business problems and making digital more human in
