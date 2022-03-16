@@ -1,10 +1,10 @@
 ﻿@extends('layouts.blueciate-3')
 @push('styles')
-    <link rel="stylesheet" href="/blueciate/css/style-awsm.css">
     <style>
         body{
 
             font-family: 'Open Sans',sans-serif;
+            font-size: 1rem;
         }
         .modal {
             z-index: 1050;
@@ -43,7 +43,7 @@
             padding: 1.3em 4.3125em 1.3em 4.3125em;
         }
         h2.heading {
-            font-size: 26px;
+            font-size: 40px;
             color:  #6dab3c;
             font-weight: 600;
             line-height: 50px;
@@ -271,7 +271,7 @@
         }
 
         .top-banner {
-            background-image: url(/blueciate/img/consulting-3.jpg);
+            background-image: url(/blueciate/img/discover-sap-run.jpg);
             height: 100%;
             padding-bottom: 70px;
             background-position: center;
@@ -293,26 +293,34 @@
 @endpush
 @section('content')
         <?php
-        $images = ['ai-1.jpg', 'ai-2.jpg', 'ai-3.jpeg', 'ai-4.jpg'];
+        $images = ['discover-sap-run.jpg'];
         ?>
 {{--        @include('blueciate.image-slider')--}}
 
 
 
-        <div class="container-fluid top-banner" id="top-banner">
-            <div class="row" style="min-height: 400px">
-                <div class="col">
-                    <br><br><br>
-                    <br><br><br>
-                    <br><br><br>
-                    <br>
-                    <br>
-                    <br>
+{{--        <div class="container-fluid top-banner" id="top-banner">--}}
+{{--            <div class="row" style="min-height: 400px">--}}
+{{--                <div class="col">--}}
+{{--                    <br><br><br>--}}
+{{--                    <br><br><br>--}}
+{{--                    <br><br><br>--}}
+{{--                    <br>--}}
+{{--                    <br>--}}
+{{--                    <br>--}}
+{{--                    <h2 class="heading banner-text text-center">SAP Technical Expertise </h2>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-lg-12 col-12 text center" style="padding: 0 15%">
+                    <img src="/blueciate/img/discover-sap-run.jpg" style="width: 100%">
+                </div>
+                <div class="col-lg-12 col-12 text center pt-5">
                     <h2 class="heading banner-text text-center">SAP Technical Expertise </h2>
                 </div>
             </div>
-        </div>
-        <div class="container">
             <div class="row pt-5">
                 <div class="col-12 col-lg-12 col-sm-12">
                     <p class="paragraph">
@@ -344,36 +352,60 @@
                 </div>
             </div>
             <div class="row mt-4">
-                <div class="col-12 col-lg-10 text-left">
-                    <h2 class="heading">Fiori</h2>
+                <div class="col-12 col-lg-5 order-lg-6 text-left">
+                    <h2 class="heading-top text-highlight">SAP FICO COACHING & CONSULTING <br> LEARN FROM THE LEADERS</h2>
+                    <ul class="fa-ul">
+                        <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>SAP Financials and Controlling</li>
+                        <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>SAP Material Ledger & SAP S/4HANA</li>
+                        <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>SAP Product Costing</li>
+                        <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>SAP Reporting & SAP Planning</li>
+                        <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>SAP Margin Analysis</li>
+                    </ul>
+                    <a class="btn btn-primary" style="font-weight: bold;" href="https://www.erpcorp.com/">Learn More Details</a>
+                </div>
+                <div class="col-12 col-lg-2 order-lg-6 text-left">
+                    <a class="btn btn-primary" style="font-weight: bold;" href="https://www.erpcorp.com/"><img src="/blueciate/img/erp-corp.png" style="width: 100%"></a>
+                </div>
+                <div class="col-lg-5 col-12 text center">
+                    <img src="/blueciate/img/S4HANA FINANCE CONTROLING.jpg" style="width: 100%">
+                    <a class="btn btn-primary btn-lg text-center" style="font-weight: bold; width: 100%" href="https://www.erpcorp.com/sap-controlling-learning">Become a members</a>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 col-lg-8 text-left">
+                    <h2 class="heading text-highlight">SAP Fiori</h2>
                     <p class="paragraph">
                         With our core design thinking principles, our UI/UX portfolio of services cover everything from UX Strategy to UX Design, delivering human-centric solutions that puts the end-user at the core. We do this with the help of FIORI. FIORI provides the framework to simplify complex business processes, provide data-enhancing visualizations, and mobile-enable your entire team.
                     </p>
                 </div>
-                <div class="col-lg-2 col-12  my-lg-5 text-right">
-                    <img src="/blueciate/img/erp-3.png" style="width: 80%">
+                <div class="col-lg-4 col-12  my-lg-5 text-right">
+                    <img src="/blueciate/img/FIORI.jpg" style="width: 80%">
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-12 col-lg-12 col-sm-12">
-                <h2 class="heading">S/4 HANA</h2>
+                <div class="col-lg-4 col-12  my-lg-5 text-right">
+                    <img src="/blueciate/img/S4HANA.png" style="width: 100%">
+                </div>
+                <div class="col-12 col-lg-8 col-sm-12">
+                <h2 class="heading text-highlight">S/4HANA</h2>
                 <p class="paragraph">
                     For businesses targeting their next phase of growth, scaling up operations comes with its unique set of challenges. Choosing the correct digital solution can help businesses reduce inefficiencies and streamline cross-functional processes, both of which are crucial to prepare for this planned phase of growth.
                     <br>
                     With SAP S/4HANA, companies can measurably reduce such inefficiencies that arise due to legacy manual administrative processes and paper-trail-based workflows that companies never had a reliable digital alternative for. What that results in, is fewer errors and a faster time to completion resulting in accurate transactional data and reduced administrative overhead. Similarly, workflows that were traditionally performed manually can now be automated to include rules-based routing of transactions to the appropriate roles within the organization, enabling the digitization of the organization’s Levels of Approvals (LOA) policies.
                 </p>
+                </div>
             </div>
 
                 <div class="row">
                     <div class="col-12 col-lg-10 col-sm-12">
-                        <h2 class="heading">BTP</h2>
+                        <h2 class="heading text-highlight">SAP BTP</h2>
                         <p class="paragraph">
                             Our focus on experience has led Mindset to be a pioneer in SAP’s BTP offerings, including technologies focused on intelligence, data and analytics, extension, and integration. BTP provides the platform for delivering remarkable user experience for business applications.
                         </p>
                     </div>
                     <div class="col-lg-2 col-12 col-sm-12 my-lg-5 text-right">
-                        <img src="/blueciate/img/erp-4.png" style="width: 80%">
+                        <img src="/blueciate/img/BTP.jpg" style="width: 100%">
                     </div>
                 </div>
 
@@ -382,7 +414,7 @@
                         <img src="/blueciate/img/erp-5.png" style="width: 80%">
                     </div>
                     <div class="col-12 col-lg-8 col-sm-12">
-                        <h2 class="heading">DevOps</h2>
+                        <h2 class="heading text-highlight">DevOps</h2>
                         <p class="paragraph">
                             In today’s high demand IT environments, using outdated methodologies, processes or practices restrain your organization’s ability to transform the user experience of technology in the enterprise. A DevOps-informed approach ensures your enterprise systems stay clean and robust while providing an industry-leading experience for your developers, enterprise technology team, users, and business stakeholders.
                         </p>
@@ -390,26 +422,28 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-12 col-lg-8 col-sm-12">
-                        <h2 class="heading">Analytics</h2>
+                    <div class="col-12 col-lg-7 col-sm-12">
+                        <h2 class="heading">SAP Analytics</h2>
                         <p class="paragraph">
                             Access and connectivity to Data, may it be through direct connectivity, data pipelines, virtual streams or via Hyper-Converged infrastructures for accurate information is critical for all businesses. Mindset focuses on the overall user experience where we enable key analytical capabilities to the appropriate business roles and personas within an organization.
                         </p>
                     </div>
-                    <div class="col-lg-4 col-12 col-sm-12 my-lg-5 text-right">
-                        <img src="/blueciate/img/erp-6.png" style="width: 80%">
+                    <div class="col-lg-5 col-12 col-sm-12 my-lg-5 text-right">
+                        <img src="/blueciate/img/Analytics.png" style="width: 100%">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-lg-5 col-12 col-sm-12 my-lg-5 text-left">
-                        <img src="/blueciate/img/erp-7.png" style="width: 80%">
+                        <img src="/blueciate/img/erp-7.png" style="width: 100%">
+                        <a class="btn btn-primary btn-lg text-center mt-4" style="font-weight: bold; width: 100%" href="https://www.erpcorp.com/sap-controlling-learning">Become a members</a>
                     </div>
                     <div class="col-12 col-lg-7 col-sm-12">
-                        <h2 class="heading">SAP S/4HANA and Central Finance</h2>
+                        <h2 class="heading text-highlight">SAP S/4HANA and Central Finance</h2>
                         <p class="paragraph">
                             SAP S/4HANA enables more speed and better insights in almost every area of finance. It’s also a platform for real-time analytics—with no more waiting for separate reporting systems, batch jobs, and long processing times. Yes, it can be expensive, and yes, there may be implementation risks, but defining a digital transformation roadmap upfront, driven by prioritized capabilities that drive value for the business, can help address both cost and risk in a positive way.
                         </p>
+                        <a class="btn btn-primary" style="font-weight: bold;" href="https://www.erpcorp.com/">Learn More Details</a>
                     </div>
                 </div>
 

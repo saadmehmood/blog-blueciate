@@ -54,13 +54,13 @@
                 It's all about
             </h5>
             <h1 class="sec-row-title " style="color: #03a9f4;">
-                Connect, Collaborate and Remote working anywhere
+                Connect, Collaborate, Simplify with SAP S/4HANA <br> and Remote working anywhere
             </h1>
             <h5>
                 That’s why I BlueCiate..
             </h5>
             <div class="secondary-btn-search">
-                <a class="button btn btn-success  get-started-btn p-3 mt-4" href="{{ route('consulting') }}">Remote Work</a>
+                <a class="button btn btn-success  get-started-btn p-3 mt-4" href="{{ route('consulting') }}">More Details</a>
             </div>
         </div>
     </div>
@@ -103,7 +103,8 @@
 <!--Rewards & Membership-->
 <div class="jumbotron jumbotron-fluid mb-0 pb-0" id="rewards_sec" style="background-color: rgb(255, 255, 255);">
   <div class="container text-center">
-    <img class="r_img" src="/blueciate/index_files/1426735.png">
+{{--    <img class="r_img" src="/blueciate/index_files/1426735.png">--}}
+    <a href="{{ route('consulting') }}"><img class="" src="/blueciate/img/The best run.jpg"></a>
     <h1 class="r_heading color-dark">SAP S/4HANA Finance & ORACLE EBS<br>Business Process Management Software (BPM)</h1>
     <h4 class="r_subheading color-dark">Business Process Management (BPM) software solution with Low-Code, Automation made Fast, Simple
         and makes it easier to build solutions for complex business problems and making digital more human in
